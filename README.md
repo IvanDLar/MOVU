@@ -1,4 +1,4 @@
-# ZWICONS
+# ZWEICONS
 ![zwicons](https://user-images.githubusercontent.com/65410762/219238539-3f5faf28-dba1-40a6-ac75-0d749566bbce.png)
 
 ## Misión
