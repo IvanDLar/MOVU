@@ -1,0 +1,6 @@
+# Requirements
+
+|  | Functional Requirements | Example | Non Functional Requirements | Examples |
+| --- | --- | --- | --- | --- |
+|  |  |  |  |  |
+|  |  |  |  |  |
