@@ -10,3 +10,7 @@ Destacar por el excelente servicio a cliente y convertir las sus ideas en un pro
 ## Valores
 - Tener un ambiente laboral de respeto y comprensión con todos los involucrados.
 - Crecer tanto de manera personal cómo profesional junto a nuestros clientes.
+
+
+
+Video presentación: https://youtu.be/cXP0k1rJeXk
