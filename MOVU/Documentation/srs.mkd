@@ -11,6 +11,7 @@
 
 
 <br>
+
 ## Tabla de Contenidos
 
 - [Introducción](#id1)
@@ -165,7 +166,9 @@ Los requerimientos ayudarán a saber como debe de funcionar la plataforma para c
 |22|Seleccion de imagenes de los vehiculos ofrecidos para su visualziacion desde distintos angulos, y con diferentes colores|Requiere de campos seleccionables con imagenes subidas por las agencias|
 |23|Seleccion de componentes de vehiculos para su modificacion | Requiere de campos seleccionables para cada parte modificable segun el listado de la agencia|
 <br>
+
 ### 3.2 Requerimientos No Funcionales <a name="id3_2"></a>
+
 <br>
 
 | |Requerimiento    | Detalles |
@@ -182,7 +185,7 @@ Los requerimientos ayudarán a saber como debe de funcionar la plataforma para c
 <br>
 
 ### **4.1 Pruebas de Caja Negra** <a name="id4"></a>
-dsd
+
 
 #### **4.1.2 Template**
 <br>
