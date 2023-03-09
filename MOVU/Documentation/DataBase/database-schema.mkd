@@ -1,0 +1,8 @@
+# Data base schema
+
+# Introducción
+
+Para nuestra propuesta decidimos implementar una base de datos no relacional.
+Tomamos está decision gracias a la gran escalabilidad que ofrecen este tipo de bases de datos, caracteristica la cual considermaos escencial para el buen crecimiento del marketplace de automoviles ya que si se busca crecer para alcanzar un mercado mundial, la carga de trabajo será enorme y las DB NoSql son mejores para manejar grandes cargas de trabajo que demandan un alto nivel de disponibilidad, sobre todo si la meta final es la implementación de la busqueda por lenguaje natural. 
+
+![Diagrama de Base de Datos](./Imagenes/MOVU_SCHEMA.png "Schema de la Base de Datos")
