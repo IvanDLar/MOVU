@@ -135,6 +135,8 @@ Las principales empresas de la industria automotriz que se encuentran en méxico
 - Ford
     - The Lincoln Company
     - Ford
+- Ferrari
+    - Ferrari
 - General Motors
     - Buick
     - Cadillac
@@ -172,14 +174,13 @@ Las principales empresas de la industria automotriz que se encuentran en méxico
     - Dodge
     - Fiat
     - Jeep
-    - Lancia
     - Maserati
     - RAM
     - Peugot
 - Subaru
     - Subaru
 - Suzuki
-    -Suzuki
+    - Suzuki
 - Tesla
     - Tesla
 - Volkswagen
@@ -192,11 +193,64 @@ Las principales empresas de la industria automotriz que se encuentran en méxico
 
 ## Apartados más comúnes de personalización
 
-
+- Color exterior
+- Color interior
+- Tamaño y tipo de rines
+- Versión sport
+- Cámara de reversa y sensores de proximidad (algunos ya los tienen integrados)
+- Tipo de faros
 
 ## Motorizaciones ofrecidas por las empresas
 
-
+|               	| Combustión Interna 	| Híbridos 	| Eléctricos 	|
+|---------------	|--------------------	|----------	|------------	|
+| Abarth        	| si                 	| no       	| no         	|
+| Acura         	| si                 	| no       	| no         	|
+| Alfa Romeo    	| si                 	| no       	| no         	|
+| Audi          	| si                 	| no       	| si         	|
+| BAIC          	| si                 	| no       	| no         	|
+| Bentley       	| si                 	| no       	| no         	|
+| BMW           	| si                 	| si       	| si         	|
+| Buick         	| si                 	| no       	| no         	|
+| Cadillac      	| si                 	| no       	| si         	|
+| Chevrolet     	| si                 	| no       	| si         	|
+| Chirey        	| si                 	| no       	| no         	|
+| Chrysler      	| si                 	| no       	| no         	|
+| Dodge         	| si                 	| no       	| no         	|
+| Ferrari       	| si                 	| no       	| no         	|
+| Fiat          	| si                 	| no       	| no         	|
+| Ford          	| si                 	| si       	| si         	|
+| GMC           	| si                 	| no       	| no         	|
+| Honda         	| si                 	| no       	| no         	|
+| Hyundai       	| si                 	| si       	| no         	|
+| Infiniti      	| si                 	| no       	| no         	|
+| JAC           	| si                 	| no       	| si         	|
+| Jaguar        	| si                 	| no       	| si         	|
+| Jeep          	| si                 	| no       	| no         	|
+| Kia           	| si                 	| no       	| no         	|
+| Lamborghini   	| si                 	| no       	| no         	|
+| Land Rover    	| si                 	| no       	| no         	|
+| Lexus         	| si                 	| si       	| no         	|
+| Lincoln       	| si                 	| no       	| no         	|
+| Maserati      	| si                 	| no       	| no         	|
+| Maybach       	| si                 	| no       	| no         	|
+| Mazda         	| si                 	| no       	| no         	|
+| Mercedes-Benz 	| si                 	| si       	| si         	|
+| Mini          	| si                 	| no       	| si         	|
+| Mitsubishi    	| si                 	| no       	| no         	|
+| MG Motor      	| si                 	| no       	| no         	|
+| Nissan        	| si                 	| no       	| si         	|
+| Peugeot       	| si                 	| no       	| si         	|
+| Porsche       	| si                 	| si       	| si         	|
+| RAM           	| si                 	| no       	| no         	|
+| Renault       	| si                 	| no       	| si         	|
+| Seat          	| si                 	| no       	| no         	|
+| Subaru        	| si                 	| no       	| no         	|
+| Suzuki        	| si                 	| no       	| no         	|
+| Tesla         	| no                 	| no       	| si         	|
+| Toyota        	| si                 	| si       	| no         	|
+| Volvo         	| si                 	| si       	| si         	|
+| Volkswagen    	| si                 	| no       	| no         	|
 
 ## Referencias
 
