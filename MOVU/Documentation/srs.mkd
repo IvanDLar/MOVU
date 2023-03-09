@@ -12,6 +12,7 @@
 |<08/03/23> |<2.0>| Arquitectura del Software | Emilio Sibaja Villarreal|
 |<09/03/23> |<3.0>| Requerimientos no funcionales |Andrea Yela González y Miguel Angel Bustamante Perez|
 |<09/03/23> |<3.0>| Requerimientos Funcionales |Juan Muniain Otero e Ivan Diaz Lara|
+|<09/03/23> |<4.0>| Arquitectura del Software | Emilio Sibaja Villarreal|
 
 
 
