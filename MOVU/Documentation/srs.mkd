@@ -9,9 +9,35 @@
 |<08/03/2323>  |<1.0>| Descripcion de Requerimientos |Juan Muniain Otero|
 |<08/03/23> |<1.0>| Sección de Pruebas y plantilla de caja negra |Ivan Diaz Lara
 
+<<<<<<< main
 
 <br>
 
+## Tabla de Contenidos
+
+- [Introducción](#id1)
+    - [Proposito](#id1_1)
+    - [Descripción del Proyecto](#id1_2)
+    - [Scope](#id1_3)
+    - [Abreviaciones y acrónimos](#id1_4)
+- [Historias de Usuario](#id2)
+- [Requerimientos](#id3)
+    - [Requerimientos Funcionales](#id3_1)
+    - [Requerimientos No Funcionales](#id3_2)
+- [Pruebas de Software](#id4)
+    - [Pruebas de Caja Negra](#id4_1)
+        - [Propuestas](#id4_1_1)
+        - [Plantilla](#id4_1_2)
+    - [Pruebas de Caja Blanca](#id4_2)
+        - [Propuestas](#id4_2_1)
+        - [Plantilla](#id4_2_2)
+        
+    
+
+<br>
+=======
+
+<br>
 ## Tabla de Contenidos
 
 - [Introducción](#id1)
@@ -41,6 +67,15 @@
 <br>
 
 ### **1.1 Proposito** <a name="id1_1"></a>
+>>>>>>> Version 1 SRS
+
+Con este documento se quiere dar a conocer las diferentes pruebas de software que se realizaran durante la creación del proyecto. Además de dar a conocer las ideas que se tienen c
+
+<<<<<<< main
+## **Introducción** <a name="id1"></a>
+<br>
+
+### **1.1 Proposito** <a name="id1_1"></a>
 
 Con este documento se quiere dar a conocer las diferentes pruebas de software que se realizaran durante la creación del proyecto. Además de dar a conocer las ideas que se tienen c
 
@@ -61,6 +96,25 @@ Se necesita crear una plataforma donde un usuario pueda comprar un automóvil si
 El objetivo de este proyecto se enfoca en ofrecer una experiencia única y fluida para el usuario brindandoles una plataforma segura donde las concesionarias puedan establecerse y de esta manera los clientes tienen un punto de compra unificado. Para ello, colaboraremos en un equipo de 5 personas donde cada uno tiene responsabilidades asignadas para un tiempe detereminado. Utilizaremos recursos que nos proporciona AWS los cuales principalmente son para alojar el proyecto dentro de la nube
 
 
+=======
+
+<!-- The purpose of the document is to collect and analyze all assorted ideas that have come up to define the system, its requirements with respect to consumers. Also, we shall predict and sort out how we hope this product will be used in order to gain a better understanding of the project, outline concepts that may be developed later, and document ideas that are being considered, but may be discarded as the product develops.
+
+In short, the purpose of this SRS document is to provide a detailed overview of our software product, its parameters and goals. This document describes the project's target audience and its user interface, hardware and software requirements. It defines how our client, team and audience see the product and its functionality. Nonetheless, it helps any designer and developer to assist in software delivery lifecycle (SDLC) processes. -->
+<br>
+
+### **1.2 Descripción del Proyecto** <a name="id1_2"></a>
+
+Se necesita crear una plataforma donde un usuario pueda comprar un automóvil sin tener que acercarse a una agencia de forma fisica. La plataforma debe permitir que las compañias de automóviles puedan registrarse, y cuando hayan sido aceptadas poder subir sus autos y las agencias correspondientes. Los usuarios al momento de buscar un auto lo podrán personalizar y hasta solicitar una prueba de manejo. Esta plataforma tiene el objetivo de poder cambiar la forma de adquirir un auto por una más eficiente, sin perder la calidad.
+<br></br>
+
+### **1.3 Scope** <a name="id1_3"></a>
+
+<!-- Primarily, the scope pertains to the E-Store product features for making Marvel Electronics and Home Entertainment project live. It focuses on the company, the stakeholders and applications, which allow for online sales, distribution and marketing of electronics. -->
+El objetivo de este proyecto se enfoca en ofrecer una experiencia única y fluida para el usuario brindandoles una plataforma segura donde las concesionarias puedan establecerse y de esta manera los clientes tienen un punto de compra unificado. Para ello, colaboraremos en un equipo de 5 personas donde cada uno tiene responsabilidades asignadas para un tiempe detereminado. Utilizaremos recursos que nos proporciona AWS los cuales principalmente son para alojar el proyecto dentro de la nube
+
+
+>>>>>>> Version 1 SRS
 <!-- This SRS is also aimed at specifying requirements of software to be developed but it can also be applied to assist in the selection of in-house and commercial software products. The standard can be used to create software requirements specifications directly or can be used as a model for defining a organization or project specific standard. It does not identify any specific method, nomenclature or tool for preparing an SRS. -->
 <br></br>
 
@@ -166,9 +220,13 @@ Los requerimientos ayudarán a saber como debe de funcionar la plataforma para c
 |22|Seleccion de imagenes de los vehiculos ofrecidos para su visualziacion desde distintos angulos, y con diferentes colores|Requiere de campos seleccionables con imagenes subidas por las agencias|
 |23|Seleccion de componentes de vehiculos para su modificacion | Requiere de campos seleccionables para cada parte modificable segun el listado de la agencia|
 <br>
+<<<<<<< main
 
 ### 3.2 Requerimientos No Funcionales <a name="id3_2"></a>
 
+=======
+### 3.2 Requerimientos No Funcionales <a name="id3_2"></a>
+>>>>>>> Version 1 SRS
 <br>
 
 | |Requerimiento    | Detalles |
@@ -180,12 +238,21 @@ Los requerimientos ayudarán a saber como debe de funcionar la plataforma para c
 |5|Fiabilidad del sitio||
 |6|Sistema para mostrar productos similares al seleccionado||
 ---
+<<<<<<< main
 
 ## 4. **Pruebas de Software** <a name="id4"></a>
 <br>
 
 ### **4.1 Pruebas de Caja Negra** <a name="id4"></a>
 
+=======
+
+## 4. **Pruebas de Software** <a name="id4"></a>
+<br>
+
+### **4.1 Pruebas de Caja Negra** <a name="id4"></a>
+dsd
+>>>>>>> Version 1 SRS
 
 #### **4.1.2 Template**
 <br>
