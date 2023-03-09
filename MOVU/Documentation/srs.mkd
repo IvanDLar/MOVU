@@ -208,8 +208,13 @@ En estas pruebas su objetivo es revisar la funcionalidad de la plataforma ignora
 <br>
 
 ## **4. Arquitectura del Software** 
-La arquitectura de MOVU está diseñada para sostener los requerimientos que los usuarios necesiten. En esta ocación nuestro software estará desplegada usando los servición de AWS, en la nube.
+
+ La arquitectura de MOVU está diseñada para sostener los requerimientos que los usuarios necesiten. En esta ocación nuestro software está basado en diferentes servicios que AWS nos ofrece
 
 
-### **Servicios**
-Utilizaremos servicios de AWS, **Lambda** que se encargará de administrar los servidores de Back-end y Front-end al igual que  nuestros recursos como **Route 53** para generar un DNS con el nombre de MOVU
+Utilizamos servicios de AWS, como **Route 53** para generar un DNS con el nombre de MOVU, donde el usuario pueda ingresar a nuestra página web y al hacer algun *request* el servicio de  **API Gateway** que se encargá de conectar a los demás servicios. También utilizamos **Lambda**  y **EC2** donde estarán alojados los servidores de Back-end y Front-end respectivamente. Además se emplea el servicio de **S3 Bucket** donde se guardarán documentos y **Amazon Comprehend** el cual es un servicio de procesamiento de lenguaje natural.
+
+Con todas estas herramientas que se nos proporcionan podremos logran nuestro objetivo de hacer una página segura y fácil de usar para nuestros usuarios.
+
+
+
