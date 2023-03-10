@@ -13,7 +13,7 @@
 |<09/03/23> |<3.0>| Requerimientos no funcionales |Andrea Yela González y Miguel Angel Bustamante Perez|
 |<09/03/23> |<3.0>| Requerimientos Funcionales |Juan Muniain Otero e Ivan Diaz Lara|
 |<09/03/23> |<4.0>| Arquitectura del Software | Emilio Sibaja Villarreal|
-
+|<09/03/23> |<4.0>| Propuesta de Front End | Andrea Yela González|
 
 
 ## Tabla de Contenidos
@@ -35,6 +35,8 @@
         - [Propuestas](#id4_2_1)
         - [Plantilla](#id4_2_2) -->
 - [Propuesta de Arquitectura](#4-arquitectura-del-software)
+- [Propuesta de Front End](#5-propuesta-de-front-end)
+- [Propuesta de Back End](#6-propuesta-de-back-end)
         
     
 
@@ -210,12 +212,25 @@ En estas pruebas su objetivo es revisar la funcionalidad de la plataforma ignora
 
 ## **4. Arquitectura del Software** 
 
- La arquitectura de MOVU está diseñada para sostener los requerimientos que los usuarios necesiten. En esta ocación nuestro software está basado en diferentes servicios que AWS nos ofrece
+La arquitectura de MOVU está diseñada para sostener los requerimientos que los usuarios necesiten. En esta ocación nuestro software está basado en diferentes servicios que AWS nos ofrece
 
 
 Utilizamos servicios de AWS, como **Route 53** para generar un DNS con el nombre de MOVU, donde el usuario pueda ingresar a nuestra página web y al hacer algun *request* el servicio de  **API Gateway** que se encargá de conectar a los demás servicios. También utilizamos **Lambda**  y **EC2** donde estarán alojados los servidores de Back-end y Front-end respectivamente. Además se emplea el servicio de **S3 Bucket** donde se guardarán documentos y **Amazon Comprehend** el cual es un servicio de procesamiento de lenguaje natural.
 
 Con todas estas herramientas que se nos proporcionan podremos logran nuestro objetivo de hacer una página segura y fácil de usar para nuestros usuarios.
 
+![Arquitectura Sugerida](./img/Arquitectura%20De%20MOVU%20v2.0.png)
+<br>
+
+## **5. Propuesta de Front End**
+La propuesta de front end se puede visualizar en [figma](https://www.figma.com/file/bAuvCP9QBQALQvJXm1GOJm/Pagina?node-id=0%3A1&t=QQGAuzqjw9Fn00Qf-1), donde se muestra la paleta de colores seleccionada, que es una combinacion de azules con un naranja como color terciario. La siguiente imagen muestra esta combinacion, además de los tipos de botones que se usarán. 
+
+![Paleta de Colores](./img/PaletaColores.png)
+
+Se planea usar [React.js](https://es.reactjs.org/) para la construcción de la página, esto debido a la práctica que ya se tiene con la libreria y su facilidad al momento de construir la plataforma. React permite que los desarrolladores usen herramientas como [bootstrap](https://getbootstrap.com/) para hacer una pagina reactiva, además que sería lo más parecido posible con el prototipo mostrado anteriormente. 
+
+<br>
+
+## **6. Propuesta de Back End**
 
 
