@@ -14,6 +14,7 @@
 |<09/03/23> |<3.0>| Requerimientos Funcionales |Juan Muniain Otero e Ivan Diaz Lara|
 |<09/03/23> |<4.0>| Arquitectura del Software | Emilio Sibaja Villarreal|
 |<09/03/23> |<4.0>| Propuesta de Front End | Andrea Yela González|
+|<10/03/23> |<4.0>| Propuesta del Back End | Ivan Diaz Lara|
 
 
 ## Tabla de Contenidos
@@ -219,7 +220,7 @@ Utilizamos servicios de AWS, como **Route 53** para generar un DNS con el nombre
 
 Con todas estas herramientas que se nos proporcionan podremos logran nuestro objetivo de hacer una página segura y fácil de usar para nuestros usuarios.
 
-![Arquitectura Sugerida](./img/Arquitectura%20De%20MOVU%20v2.0.png)
+![Arquitectura Sugerida](./Arquitectura/Arquitectura%20De%20MOVU%20v2.0.png)
 <br>
 
 ## **5. Propuesta de Front End**
@@ -234,5 +235,5 @@ Se planea usar [React.js](https://es.reactjs.org/) para la construcción de la p
 ## **6. Propuesta de Back End**
 El framework principal que usaremos para el desarrollo del back-end será el de Node.js, la versión está por verse pero lo ideal sería usar la versión estable más reciente para poder sacarle el máximo provecho al framework.
 
-Este mismo lo usaremos para obtener las librerías de front-end (React), y en especifico usaremos la librería de Express.js para levantar de manera rapida y sencilla la API RESTful.
+Este mismo lo usaremos para obtener las librerías de front-end (React), y en específico usaremos la librería de Express.js para levantar de manera rápida y sencilla la API RESTful que utilizaremos en el back end.
 

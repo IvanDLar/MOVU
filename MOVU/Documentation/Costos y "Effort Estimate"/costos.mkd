@@ -1,0 +1,33 @@
+# Documento de Costos
+
+![Tabla de Estimación de Esfuerzo](./img/effort_estimate.png "Tabla de Estimación de Esfuerzo")
+
+---
+|Integrantes|Salario (MXN)|
+|---|---|
+|MB	|$29,800.00|
+|JM	|$30,600.00|
+|ID	|$32,200.00|
+|ES	|$33,800.00|
+|AY	|$29,600.00|
+
+|Licencias (Diario)|	USD|	MXN|
+|---|:---:|:---:|
+Github|	1,12	|21,28
+Microsoft|	0,27	|5,07
+AWS	|2,93	|55,73
+MongoDB|	3,20	|60,80
+Total	|7,52|	142,88
+
+|||
+|---|---|
+Gasto Operacional (Salarios)	|$156.000,00|
+Gasto Operacional (Herramientas) 	|$36.670,15|
+
+|||
+|---|---|
+Total Internal Cost	|$192.670,00
+Margin	|50%
+Revenue	|$289.005,23
+
+**Link para el documento en formato excel: https://docs.google.com/spreadsheets/d/19T1lcwOvraQHvD8_wBJE4N5swAaca5u8dzXQZyYDpaU/edit?usp=sharing**

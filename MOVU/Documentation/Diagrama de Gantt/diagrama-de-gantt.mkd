@@ -1,0 +1,2 @@
+# Diagrama de Gantt
+Para desarrollar este diagrama decidimos usar la herramienta de monday: https://ivandlartec.monday.com/boards/4079249095/views/92412865
