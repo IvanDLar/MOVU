@@ -232,5 +232,7 @@ Se planea usar [React.js](https://es.reactjs.org/) para la construcción de la p
 <br>
 
 ## **6. Propuesta de Back End**
+El framework principal que usaremos para el desarrollo del back-end será el de Node.js, la versión está por verse pero lo ideal sería usar la versión estable más reciente para poder sacarle el máximo provecho al framework.
 
+Este mismo lo usaremos para obtener las librerías de front-end (React), y en especifico usaremos la librería de Express.js para levantar de manera rapida y sencilla la API RESTful.
 
