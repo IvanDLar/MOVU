@@ -1,0 +1,2 @@
+# Propuesta de Arquitectura
+![Diagrama de Arquitectura](./Arquitectura%20De%20MOVU%20v2.0.png "Diagrama de Arquitectura")
