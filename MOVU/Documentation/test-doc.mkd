@@ -34,11 +34,16 @@
   - [**Ambiente de Pruebas**](#ambiente-de-pruebas)
 - [**4. Pruebas de Software**](#4-pruebas-de-software)
     - [**4.1 Pruebas de Caja Negra**](#41-pruebas-de-caja-negra)
-    - [**4.1.2 Inicio de sesion y registro de usuario**](#412-inicio-de-sesion-y-registro-de-usuario)
+    - [**4.1.2 Inicio de sesion y registro**](#412-inicio-de-sesion-y-registro)
       - [**4.1.2.1 Login**](#4121-login)
-      - [**4.1.2.2 Registro**](#4122-registro)
-    - [**4.1.3 Aceptación de Documentos**](#413-aceptación-de-documentos)
-    - [**4.1.4 Aceptación de imágenes**](#414-aceptación-de-imágenes)
+      - [**4.1.2.2 Registro de usuario**](#4122-registro-de-usuario)
+      - [**4.1.2.3 Registro de vehiculo**](#4123-registro-de-vehiculo)
+      - [**4.1.2.4 Registro de agencia**](#4124-registro-de-agencia)
+      - [**4.1.2.5 Registro de compañia**](#4125-registro-de-compañia)
+    - [**4.1.3 Aceptación de Solicitudes**](#413-aceptación-de-solicitudes)
+    - [**4.1.4 Aceptación de datos embedidos**](#414-aceptación-de-datos-embedidos)
+      - [**4.1.4.1 Aceptación de Documentos**](#4141-aceptación-de-documentos)
+      - [**4.1.4.2 Aceptación de imágenes**](#4142-aceptación-de-imágenes)
   - [Conclusiones](#conclusiones)
 
 ## **Introducción**
@@ -146,7 +151,7 @@ Plan de comunicación (tempalte): tablas, a quien se comunica
 En estas pruebas su objetivo es revisar la funcionalidad de la plataforma ignorando su parte interna.
 <br><br>
 
-### **4.1.2 Inicio de sesion y registro de usuario**
+### **4.1.2 Inicio de sesion y registro**
 <br>
 
 #### **4.1.2.1 Login**
@@ -158,7 +163,7 @@ En estas pruebas su objetivo es revisar la funcionalidad de la plataforma ignora
 | Nombre de usuario invalido <br> | Login fallido con mensaje de error | El usuario no puede ingresar <br> *Mensaje de Error*: Credenciales Incorrectas  | ❌ |
 <br>
 
-#### **4.1.2.2 Registro**
+#### **4.1.2.2 Registro de usuario**
 | Entrada  | Salida Esperada  | Salida Recibida  | Aprobado |
 |---|---|---|---|
 | Nombre de usuario existente <br> Contraseña valida  | Registro fallido con mensaje de error  | El usuario no puede registrarse <br> *Mensaje de Error*: El usuario ya existe  | ✔️ |
@@ -167,7 +172,27 @@ En estas pruebas su objetivo es revisar la funcionalidad de la plataforma ignora
 | Nombre de usuario no existente <br> Contraseña invalida | Registro fallido con mensaje de error  | El usuario no puede registrarse <br> *Mensaje de Error*: Contraseña invalida  | ✔️ |
 <br>
 
-### **4.1.3 Aceptación de Documentos**
+#### **4.1.2.3 Registro de vehiculo**
+| Entrada  | Salida Esperada  | Salida Recibida  | Aprobado |
+|---|---|---|---|
+<br>
+
+#### **4.1.2.4 Registro de agencia**
+| Entrada  | Salida Esperada  | Salida Recibida  | Aprobado |
+|---|---|---|---|
+<br>
+
+#### **4.1.2.5 Registro de compañia**
+| Entrada  | Salida Esperada  | Salida Recibida  | Aprobado |
+|---|---|---|---|
+<br>
+
+### **4.1.3 Aceptación de Solicitudes**
+
+
+### **4.1.4 Aceptación de datos embedidos**
+
+#### **4.1.4.1 Aceptación de Documentos**
 | Entrada  | Salida Esperada  | Salida Recibida  | Aprobado |
 |---|---|---|---|
 |Documento es .pdf <br> Se subio un documento| Doumento subido exitosamente a base de datos|Doumento subido exitosamente a base de datos|✔️|
@@ -176,12 +201,13 @@ En estas pruebas su objetivo es revisar la funcionalidad de la plataforma ignora
 |Documento es .pdf <br> Se subio un documento <br>Nombre de documento inválido| Nombre de documento invalido con mensaje de error| Documento no se acepta en la base de datos <br> *Mensaje de Error:* Nombre de documento inválido| ❌ |
 <br>
 
-### **4.1.4 Aceptación de imágenes**
+#### **4.1.4.2 Aceptación de imágenes**
 | Entrada | Salida Esperada | Salida Recibida | Aprobado |
 |---|---|---|---|
 | El archivo es .jpg <br> Se subió un archivo de imagen | Imagen subida exitosamente a la base de datos | Imagen subida exitosamente a la base de datos | ✔️ |
 | No se subio archivo .jpg |  Carga de archivo jpg fallida con mensaje de error | El archivo de imagen no se subió a la base de datos <br> *Mensaje de Error:* Documento no subido | ❌ |
 | El archivo no es .jpg <se> Se subió un archivo de imagen | El tipo de archivo de imagen es incorrecto con mensaje de error | Imagen no aceptada en la base de datos <br> *Mensaje de Error:* Archivo no es .jpg | ❌ |
+<br>
 
 
 
