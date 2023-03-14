@@ -5,11 +5,12 @@
 |Fecha|Version|Descripción|Autor|
 | ---|   ---     | --- | :--- |
 |<13/03/23> |<1.0>| Pruebas de Caja Negra y descripcion de contenidos. |Andrea Yela González <br>Juan Muniain Otero <br>Miguel Angel Bustamante Perez|
-|<13/03/23> |<1.0>| Dependencias |Emiliio Sibaja Villarreal|
+|<13/03/23> |<1.0>| Dependencias |Emilio Sibaja Villarreal|
 |<13/03/23> |<1.0>| Alcance y estrategias |Ivan Diaz Lara|
 |<14/03/23> |<2.0>| Pruebas de Caja Negra y descripcion de contenidos. |Andrea Yela González <br>Juan Muniain Otero <br>Miguel Angel Bustamante Perez|
-|<14/03/23> |<2.0>| Proceso de Manejo de Pruebas,  |Ivan Diaz Lara|
-|<14/03/23> |<2.0>| Dependencias |Emiliio Sibaja Villarreal|
+|<14/03/23> |<2.0>| Proceso de Manejo de Pruebas |Ivan Diaz Lara|
+|<14/03/23> |<2.0>| Dependencias |Emilio Sibaja Villarreal|
+|<14/03/23> |<2.1>| Pruebas de Caja Negra y descripcion de contenidos. |Andrea Yela González <br>Juan Muniain Otero <br>Miguel Angel Bustamante Perez|
 <br><br>
 # **1. Tabla de Contenidos**
 - [**Documento de Pruebas de Software**](#documento-de-pruebas-de-software)
@@ -58,64 +59,69 @@
     - [**4.1.6 Mostrar vistas de autos**](#416-mostrar-vistas-de-autos)
       - [**4.1.6.1 Mostrar vistas de autos en la pagina principal**](#4161-mostrar-vistas-de-autos-en-la-pagina-principal)
       - [**4.1.6.2 Mostrar vistas de autos en la pagina de la agencia**](#4162-mostrar-vistas-de-autos-en-la-pagina-de-la-agencia)
+    - [**4.1.7 Modificacion de comisiones**](#417-modificacion-de-comisiones)
+    - [**4.1.7.1 Modificacion de comisiones por agencia**](#4171-modificacion-de-comisiones-por-agencia)
+    - [**4.1.7.2 Modificacion de comisiones por vehiculo**](#4172-modificacion-de-comisiones-por-vehiculo)
     - [**4.1.8 Busqueda guiada**](#418-busqueda-guiada)
     - [**4.1.10 Muestra de diferentes paginas o widgets segun el rol**](#4110-muestra-de-diferentes-paginas-o-widgets-segun-el-rol)
     - [**4.1.11 Aplicacion de ofertas al precio del automovil**](#4111-aplicacion-de-ofertas-al-precio-del-automovil)
     - [**4.1.13 Seleccion de forma de entrega**](#4113-seleccion-de-forma-de-entrega)
       - [**4.1.13.1 Aceptación de dirección**](#41131-aceptación-de-dirección)
+    - [**4.1.14 Seleccion de componentes de vehiculo por parte de usuario**](#4114-seleccion-de-componentes-de-vehiculo-por-parte-de-usuario)
+    - [**4.1.15 Muestra de datos del automovil**](#4115-muestra-de-datos-del-automovil)
+    - [**4.1.16 Navegacion sin registro de usuario**](#4116-navegacion-sin-registro-de-usuario)
+    - [**4.1.17 Muestra de widgets o campos requeridos seleccionados para comprar vehiculo**](#4117-muestra-de-widgets-o-campos-requeridos-seleccionados-para-comprar-vehiculo)
+    - [**4.2 Pruebas de Caja Blanca**](#42-pruebas-de-caja-blanca)
   - [Conclusiones](#conclusiones)
----
----
+
 # **Introducción**
 
 # **Objetivos**
-
 El presente docuemento para el proyecto MOVU tiene los siguientes objetivos:
 
 - Identificar las pruebas necesarias para satisfacer los requerimientos solicitados
 - Describir de manera detallada cada prueba que se va a realizar
 - Agregar orden y calidad al desarrollo al tener un plan previamente establecido, sobre el qué y el por qué se harán.
 - Asegurar la calidad de la aplicacion en tanto a su funcionalidad, probando componentes que impliquen transferencia de datos.
+<br>
 
 # **Dependencias**
 Lista de eventos o milestones que deben ser completados antes de comenzar cierta actividad de pruebas.
 
 | No.  | Tipo de prueba  | Prueba  | Dependencia |
 |---|---|---|---|
-1|Prueba unitaria  |Inicio de sesión y registro exitoso  **mr sib hibadib** |Página web y base de datos conectados   |
+1|Prueba unitaria  |Inicio de sesión y registro exitoso |Página web y base de datos conectados   |
 2|Prueba unitraria   |Conexión a la base de datos   | Base de datos creada y desplegada   |
-3|Prueba unitaria   |Conexión con la API   |   |
 4|Prueba unitaria   |Subir documentos   |   |
-5|Prueba unitaria   |El gerente de la compañia administra a los gerentes de agencia    |   |
+5|Prueba unitaria   |El gerente de grupo administra a los gerentes de agencia    |   |
 6|Prueba unitaria   |El super administrador valida/rechaza solicitudes de agencias   |   |
 7|Prueba unitaria   |El super administrador  revisa y elimina gerentes registrados   |   |
-8|Pruebas de unitarias   |Registro de vehículos   |   |
-9|Prueba de integración   |Compra de un coche   |   |
-10|Prueba de integración   |Solicitar una prueba de manejo   |   |
-11|Prueba de integración  |Busqueda de elementos   |   |
-12|Prueba de aceptación  |Página web carga el diseño que el cliente desea   |Página web completada   |
+  8|Pruebas de unitarias   |Registro de vehículos   |   |
+9|Prueba de integración   |Conexión con la API   |Página web y base de datos   |
+10|Prueba de integración   |Compra de un coche   |   |
+11|Prueba de integración   |Solicitar una prueba de manejo   |Página web    |
+12|Prueba de integración  |Busqueda de elementos   |Bucket y base de datos    |
+13|Prueba de aceptación  |Diseño de la página aprobado por el cliente  |Página web    |
+<br>
 
-
----
----
 # **2. Alcance**
 Cabe recalcar que no se realizarán pruebas de tipo no funcionales (carga, volumen, seguridad) debido a la limitante de tiempo que se nos ha impuesto para realizar el desarrollo del proyecto.
-| Prueba  | Tipo de Prueba  | Alcance  | Interesados
-|---|---|---|---|
-Manual de Usuario   | Estatica | ---INVESTIGAR--- | Usuario Final, Project Manager (Scrum Master) y CEO |
-Manual de Desarrollador   | Estatica | --- INVESTIGAR --- | Desarrolladores y Project Manager (Scrum Master) y Tester  |
-Recorridos   | Estatica | Se usarán para validar y cerrar el desarrollo de los modulos y/o requerimientos funcionales. |  Desarrolladores, Project Manager (Scrum Master), CEO y Testers|
-Pruebas de Informales   | Dinamica | Todos los desarrollos, requerimientos funcionales y no funcionales. |  Desarrolladores |
-Pruebas de Caja Negra   | Dinamica | Todos los Requerimientos funcionales, en caso de tener tiempo algunos no funcionales | Desarrolladores  |
-Pruebas de Caja Blanca (Recorrido Cobertura)  | Dinamica | Todos los Requierimientos funcionales, solamente si las pruebas de caja negra fallan. | Desarrolladores, Testers |
-Pruebas de Caja Blanca (Recorrido Basico)   | Dinamica | Todos los Requerimientos funcionales, solamente si las pruebas de recorrido de cobertura no lanzan error. | Desarrolladores, Testers y Project Manager (Scrum Master)  | Dinamica | |
-Pruebas de Aceptación   | Dinamica | Requerimientos funcionales previo a ser aceptados en la rama principal. | Desarrolladores, Testers |
-
+| Prueba  | Tipo de Prueba  | Alcance  |
+|---|---|---|
+Manual de Usuario   | Estatica | ---INVESTIGAR--- |
+Manual de Desarrollador   | Estatica | --- INVESTIGAR --- |
+Recorridos   | Estatica | Se usarán para validar y cerrar el desarrollo de los modulos y/o requerimientos funcionales. |
+Pruebas de Informales   | Dinamica | Todos los desarrollos, requerimientos funcionales y no funcionales. |
+Pruebas de Caja Negra   | Dinamica | Todos los Requerimientos funcionales, en caso de tener tiempo algunos no funcionales |
+Pruebas de Caja Blanca (Recorrido Cobertura)  | Dinamica | Todos los Requierimientos funcionales, solamente si las pruebas de caja negra fallan. |
+Pruebas de Caja Blanca (Recorrido Basico)   | Dinamica | Todos los Requerimientos funcionales, solamente si las pruebas de recorrido de cobertura no lanzan error. | Desarrolladores, Testers y Project Manager (Scrum Master)  | Dinamica | 
+Pruebas de Aceptación   | Dinamica | Requerimientos funcionales previo a ser aceptados en la rama principal. | 
+<br>
 
 # **3. Estrategias de pruebas**
-Aqui va que pruebas haremos y por qué.
 
 ## **Pruebas Estáticas**
+<br>
 
 ### **Manual de Desarrollador** 
 Se generará un manual de desarrollador para especificar la manera en la que se debe usar el sistema de la aplicación, considerando aspectos como la instalación de aplicaciónes y herramientas para su configuración y soporte. Se hace un desglose de los diferentes componentes programáticos que conforman a la aplicación, como su arquitectura, entornos utilizados, diseño de bases de datos, y personas encargadas al mantenimiento de diferentes componentes de la misma.
@@ -151,10 +157,12 @@ En este documento se definirán las siguientes secciónes:
 ### **Recorridos**
 Propósito de la prueba: <br>
 Buscan explorar de forma no regulada el sistema, intentando simular los diversons caminos que diferentes tipos de usuarios podrían recorrer.
+<br>
 
 **Alcance:**
 - Se aplicarán solamente en modulos de requerimientos que estén completamente terminados (dentro del scope del proyecto).
 - Se usarán como sello de validación final para grandes porciones del proyecto, y así cerrarlas para futuro desarrollo. 
+<br>
 
 ### **Peer Review**
 Propósito de la prueba: <br>
@@ -166,12 +174,14 @@ Detectar errores que el desarrollador original pudo haber omitido.
 
 ---
 ## **Pruebas Dinámicas**
+<br>
 
 ### **Pruebas Unitarias**
+<br>
 
 #### **De Caja Negra**
-Propósito de la prueba: <br>
-Verificar las entradas y salidas de las diferentes unidades del software (funciones, clases, etc...) ignorando su funcionamiento interno.
+
+Tienen como proposito verificar las entradas y salidas de las diferentes unidades del software (funciones, clases, etc...) ignorando su funcionamiento interno.
 
 **Alcance:**
 - Se aplicarán sobre todos los requerimientos funcionales.
@@ -185,10 +195,10 @@ Probar todos los posibles caminos a cubrir en la aplicacion mediante pruebas de 
 **Alcance:**
 - Se mediran la utilidad del codigo contabilizando todas las lineas de codigo escritas con pruebas de cobertura.
 - Se probaran todos los caminos posibles segun los resultados posibles de las funciones escritas (recorrido básico), en caso de que las pruebas de caja negra, o los recorridos mediante pruebas estaticas resulten en fallas.
+<br>
 
 ### **Pruebas de Integración**
-Proposito de la prueba: <br>
-Poner a prueba el funcionamieto de multiples conjuntos de unidades, es decir durante las pruebas de integración se pondrá a prueba que estas unidades trabajen de manera correcta tanto de manera individual cómo de manera grupal (integración) y que le resultado conjunto de las unidades sea le correcto.
+Tienen como proposito poner a prueba el funcionamieto de multiples conjuntos de unidades, es decir durante las pruebas de integración se pondrá a prueba que estas unidades trabajen de manera correcta tanto de manera individual cómo de manera grupal (integración) y que le resultado conjunto de las unidades sea le correcto.
 
 # **Proceso de manejo de pruebas**
 A que le harémos las pruebas 
@@ -199,37 +209,62 @@ A que le harémos las pruebas
 
 ## **Tabla de roles**
 
-| Rol  | Pruebas a realizar  |  Descripción  | 
+| Rol  | Pruebas a realizar  |  Descripción  |
 |---|---|---|
-| Desarrollador | - Manual de Desarrollador <br> -Peer Review <br> - Informales <br> - Pruebas de Caja Negra <br> - Pruebas de Integración <br> | Los desarrolladores formaran parte esencial de las pruebas base, con el objetivo de tener la mayor cantidad de modulos y unidades pequeñas validadas.    |
-| Tester | - Pruebas de Caja Blanca (Cobertura) <br> - Pruebas de Caja Blanca (Camino Básico) <br> - Pruebas de Integración <br> - Pruebas de Aceptación  | Los testers tendrán la labor de buscar huecos debiles en el codigo de los desarrolladores, y asegurar de manera más estricta la calidad de este mismo. |
+| Equipo de Desarrolladores | - Manual de Desarrollador <br> - Peer Review <br> - Informales <br> - Pruebas de Caja Negra <br> - Pruebas de Integración <br> | Los desarrolladores formaran parte esencial de las pruebas base, con el objetivo de tener la mayor cantidad de modulos y unidades pequeñas validadas.   |
+| Lead de Desarrolladores | - Manual de Desarrollador <br> - Peer Review <br> - Informales <br> - Pruebas de Caja Negra <br> - Pruebas de Integración | El Lead de Desarrolladores fungirá todas las labores de un desarrollador, sin embargo para fungir de manera correcta como Lead este mismo tendrá que estar al tanto de todos los desarrollos, en la fase que se encuentran y llevar un buen control y conocimiento de que está haciendo cada quién para poder llevar una mejor organización.   |
+| Equipo de Testers | - Pruebas de Caja Blanca (Cobertura) <br> - Pruebas de Caja Blanca (Camino Básico) <br> - Pruebas de Integración <br> - Pruebas de Aceptación  | Los testers tendrán la labor de buscar huecos debiles en el codigo de los desarrolladores, y asegurar de manera más estricta la calidad de este mismo. |
+| Lead de Testers | - Pruebas de Caja Blanca (Cobertura) <br> - Pruebas de Caja Blanca (Camino Básico) <br> - Pruebas de Aceptación  | Los testers tendrán la labor de buscar huecos debiles en el codigo de los desarrolladores, y asegurar de manera más estricta la calidad de este mismo. |
+| Equipo de Devops | - Pruebas de Caja Blanca (Cobertura) <br> - Pruebas de Caja Blanca (Camino Básico) <br> - Pruebas de Integración <br> - Pruebas de Aceptación  | El equipo de devops se encargará de levantar y mantener el correcto funcionamiento de la arquitectura del sistema (Levantamiento de la DB, levantamiento de la applicación en AWS, etc...) |
+| Devops Manager | - Pruebas de Caja Negra <br> - Pruebas de Caja Blanca (Camino Básico) <br> - Pruebas de Integración <br> - Pruebas de Aceptación  | Lleva el orden del equipo y conocer a profundidad la distribución de tareas de los integrantes de devops, de misa manera fungirá las labored de un devops. | 
 | Project Manager | - Pruebas de Caja Blanca (Camino Básico) <br> - Pruebas de Integración <br> - Pruebas de Aceptación <br> - Recorrido | El PM se encargará de supervisar y llevar un seguimiento detallado de las pruebas más complejas y generales, con la meta de poder detectar comportamientos no deseados o defectuosos.  |
 | CEO | - Recorrido | - Es sumamente importante que el CEO esté presente a la hora de realizar la prueba más real y completa, para que el mismo pueda evaluar el rendimiento del sistema y observar de primera mano todos los comportamientos del sistema.  |
 | User | - Manual de Usuario  | --- IMPORTANTE REVISAR --- |
+<br>
 
 ## **Plan de comunicación**
 
 | Tipo de Prueba  | Metodología de Aplicación  | A quién se le reporta | 
 |---|---|---|
 | Prueba Informal | 1.- Se aplicarán durante el desarrollo de cualquier requerimiento. <br> 2.- Están basadas principalmente en la intuición y habilidad del desarrollador.   | No se reportan a nadie.  |
-| Peer Review | 1.- Se aplicarán durante el desarrollo de cualquier requerimiento <br>  | Se reporta entre los equipos de desarrollo. |
-| Prueba de Caja Negra | 1.- |  |
-| Prueba de Caja Blanca (Cobertura) |  |  |
-| Prueba de Caja Blanca (Camino Basico) |  |  |
-| Pruebas de Integración |  |  |
-| Prueba de Aceptación |  |  |
-| Recorrido |  |  |
+| Peer Review | 1.- Se aplicarán durante el desarrollo de cualquier requerimiento <br>  | Se reporta: <br> 1.- Entre los equipos de desarrollo, se deberá tener cómo minimo el visto bueno del Developer Lead y 2 developers para ser aceptados. |
+| Prueba de Caja Negra | 1.- Se aplicarán al concluir estructuras como metodos, funciones y clases. | Se reporta: <br> 1.- Testers | 
+| Prueba de Caja Blanca (Cobertura) | 1.- Se realizan por el equipo de testers y developers, invocando todos los puntos de entrada, y sus respectivas salidas. <br> 2.- Es necesario probar todas las condiciones con todas sus posibles entradas, consideranto su impacto independiente a otras condiciones. | Se reporta a: <br> 1.- Tester Lead <br> 2.- Product Manager |
+| Prueba de Caja Blanca (Camino Basico) |1.- Se requiere probar cada camino de la aplicacion la menos una vez  | Se reporta a: <br> 1.- Tester Lead <br> 2.- Product Manager <br> 3.- Developer Lead |
+| Pruebas de Integración |1.- Se realizan por el equipo de testers para probar un conjunto de elementos o grupo de modulos. | Se reporta a: <br> 1.- Developer Leader <br> 2.- Tester Leader |
+| Prueba de Aceptación |1.- Se realizan por el equipo de testers para comprobar que el sistema se adecua a los requerimientos establecidos, o bien los criterios de aceptacion. | Se reporta a: <br> 1.- Product Manager |
+| Recorrido |1.- El o los lideres de desarrollo llevan a cabo recorridos de las diferentes partes del producto, recibiendo retroalimentacion de posibles cambios o fallas. | Se reporta a: <br> 1.- Product Manager <br> 2.- Product Owner |
+<br>
+
 ## **Cronograma**
-| Rol | Abreviacion ||
+
+| Rol | Abreviacion |
+| --- | --- |
 | Developer | D |
+| Developer Lead | DL |
+| Tester | T |
+| Tester Lead | TL |
+| Architect | A |
+| Architect Lead | AL |
+| DevOps | DO |
+| DevOps Lead | DOL |
+| Project Manager | PM |
+| Product Owner | PO |
+<br>
 
 | Tipo de pruebas | Sprint 1 | Sprint 2 | Sprint 3 | Sprint 4 | Sprint 5 | Sprint 6 | Sprint 7 | Sprint 8 | Sprint 9 | Sprint 10 |  
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Pruebas unitarias | x | x | Development, Testing | | | | | | |
-
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Pruebas de caja negra | x | D, DL | D, DL | D, DL | D, DL | D, DL | D, DL | D, DL | D, DL | D, DL |
+| Pruebas de integracion | x | x | x  | D, T  | D, T | D, T | D, T | D, T | D, T | D, T |
+| Pruebas de aceptacion | x | x | x | x | T, TL | T, TL | T, TL | T, TL | T, TL | T, TL |
+| Recorridos | x | x | x | x | DL, TL, PM, PO | x | x | x | x | DL, TL, PM, PO |
+<br>
+*Asumimos que se comenzaran a realizar pruebas de aceptacion a partir de la quinta semana*
+*Los testers se involucrarán en pruebas de integración y aceptación. El Test Lead estará involucrado solo en pruebas de aceptacion.*
 
 # **Ambiente de Pruebas**
 Definir estándares sobre los cuales nos basaremos para realizar las pruebas (preubas de integración, no importa que software se use, pero para pruebas de aceptación es importante cerrar todos las pestañas y procesos no importantes.)
+<br>
 
 # **Pruebas de Software** 
 
@@ -242,7 +277,7 @@ En estas pruebas su objetivo es revisar la funcionalidad de la plataforma ignora
 
 #### **4.1.2.1 Login**
 | Entrada  | Salida Esperada  | Salida Recibida  | Aprobado |
-|---|---|---|---|
+|---|---|---|:---:|
 | Nombre de usuario existente <br> Contraseña Correcta  | Login Exitoso  | El usuario ha ingresado exitosamente  | ✔️ |
 | Nombre de usuario existente <br> Contraseña Incorrecta  | Login Fallido con mensaje de error  | El usuario no puede ingresar <br> *Mensaje de Error*: Credenciales Incorrectas  | ❌ |
 | Nombre de usuario no existente <br> | Login fallido con mensaje de error  | El usuario no puede ingresar <br> *Mensaje de Error*: Credenciales Incorrectas  | ❌ |
@@ -251,7 +286,7 @@ En estas pruebas su objetivo es revisar la funcionalidad de la plataforma ignora
 
 #### **4.1.2.2 Registro de usuario**
 | Entrada  | Salida Esperada  | Salida Recibida  | Aprobado |
-|---|---|---|---|
+|---|---|---|:---:|
 | Nombre de usuario existente <br> Contraseña valida  | Registro fallido con mensaje de error  | El usuario no puede registrarse <br> *Mensaje de Error*: El usuario ya existe  | ✔️ |
 | Nombre de usuario existente <br> Contraseña invalida  | Registro fallido con mensajes de error  | El usuario no puede registrarse <br> *Mensaje de Error*: El usuario ya existe <br> *Mensaje de Error*: Contraseña invalida | ❌ |
 | Nombre de usuario no existente <br> Contraseña valida | Registro exitoso  | El usuario se ha registrado exitosamente  | ✔️ |
@@ -260,7 +295,7 @@ En estas pruebas su objetivo es revisar la funcionalidad de la plataforma ignora
 
 #### **4.1.2.3 Registro de vehiculo**
 | Entrada  | Salida Esperada  | Salida Recibida  | Aprobado |
-|---|---|---|---|
+|---|---|---|:---:|
 | Entradas de texto válidas | Registro exitoso | El vehículo ha sido registrado <br> | ✔️ |
 | Entradas de texto inválidas | Datos de texto inválidos | El vehículo no puede registrarse <br> *Mensaje de error*: El vehículo no pudo registrarse, datos de texto inválidos | ❌ |
 | Entradas de texto válidas pero descripción del vehículo incorrecta/inadeacuada |  El vehículo no puede registrarse | El vehículo no puede registrarse <br> *Mensaje de error*: Información extra inválida | ❌ | 
@@ -270,7 +305,7 @@ En estas pruebas su objetivo es revisar la funcionalidad de la plataforma ignora
 
 #### **4.1.2.4 Registro de agencia**
 | Entrada  | Salida Esperada  | Salida Recibida  | Aprobado |
-|---|---|---|---|
+|---|---|---|:---:|
 | Entradas de texto válidas | Registro exitoso | El vehículo ha sido registrado | ✔️ |
 | Entradas de texto inválidas | Datos de texto inválidos | La agencia no puede registrarse <br> *Mensaje de error*: La agencia no pudo registrarse, datos de texto inválidos | ❌ |
 | Entradas de texto válidas pero ubicación de la agencia inválida |  La agencia no puede registrarse | La agencia no puede registrarse <br> *Mensaje de error*: Información de ubicación no válida | ❌ | 
@@ -280,7 +315,7 @@ En estas pruebas su objetivo es revisar la funcionalidad de la plataforma ignora
 
 #### **4.1.2.5 Registro de compañia**
 | Entrada  | Salida Esperada  | Salida Recibida  | Aprobado |
-|---|---|---|---|
+|---|---|---|:---:|
 | Entradas de texto válidas | Registro exitoso | La compañia ha sido registrada | ✔️ |
 | Entradas de texto inválidas | Datos de texto inválidos | La compañia no puede registrarse <br> *Mensaje de error*: La compañia no pudo registrarse, datos de texto inválidos | ❌ |
 | Campos vacíos | Registro no exitoso | Datos de texto vacíos *Mensaje de error*: Campos vacíos, ingresar información faltante | ❌ |
@@ -291,7 +326,7 @@ En estas pruebas su objetivo es revisar la funcionalidad de la plataforma ignora
 
 #### **4.1.3.1 Aceptación de solicitud de grupo**
 | Entrada  | Salida Esperada  | Salida Recibida  | Aprobado |
-|---|---|---|---|
+|---|---|---|:---:|
 | Se despliegan los datos al seleccionar el boton de revision de la solicitud | Despliegue de datos de la solicitud seleccionada | Se despliegan datos de texto, documentos de la solicitud, y botones para aceptar o rechazar solicitud | ✔️ |
 | Se acepta solicitud seleccionada de alta de compañia | Se almacenan los datos de la compañia en la base de datos | Registro de datos en base de datos de compañias | ✔️ |
 | Se rechaza solicitud seleccionada de alta de compañia | Se elimina solicitud de la lista de solicitudes | Se elimina solicitud de la lista de solicitudes | ✔️ |
@@ -299,7 +334,7 @@ En estas pruebas su objetivo es revisar la funcionalidad de la plataforma ignora
 
 #### **4.1.3.2 Aceptación de solicitud de agencia**
 | Entrada  | Salida Esperada  | Salida Recibida  | Aprobado |
-|---|---|---|---|
+|---|---|---|:---:|
 | Se despliegan los datos al seleccionar el boton de revision de la solicitud | Despliegue de datos de la solicitud seleccionada | Se despliegan datos de texto, documentos de la solicitud, y botones para aceptar o rechazar solicitud | ✔️ |
 | Se acepta solicitud seleccionada de alta de compañia | Se almacenan los datos de la compañia en la base de datos | Registro de datos en base de datos de compañias | ✔️ |
 | Se rechaza solicitud seleccionada de alta de compañia | Se elimina solicitud de la lista de solicitudes | Se elimina solicitud de la lista de solicitudes | ✔️ |
@@ -307,7 +342,7 @@ En estas pruebas su objetivo es revisar la funcionalidad de la plataforma ignora
 
 #### **4.1.3.3 Aceptación de solicitud de gerente de agencia** <!-- FALTA VISTA DE GERENTE DE GRUPO/SUPER ADMIN -->
 | Entrada  | Salida Esperada  | Salida Recibida  | Aprobado |
-|---|---|---|---|
+|---|---|---|:---:|
 | Se despliegan los datos al seleccionar el boton de revision de la solicitud | Despliegue de datos de la solicitud seleccionada | Se despliegan datos de texto, documentos de la solicitud, y botones para aceptar o rechazar solicitud | ✔️ |
 | Se acepta solicitud seleccionada de alta de compañia | Se almacenan los datos de la compañia en la base de datos | Registro de datos en base de datos de compañias | ✔️ |
 | Se rechaza solicitud seleccionada de alta de compañia | Se elimina solicitud de la lista de solicitudes | Se elimina solicitud de la lista de solicitudes | ✔️ |
@@ -315,7 +350,7 @@ En estas pruebas su objetivo es revisar la funcionalidad de la plataforma ignora
 
 #### **4.1.3.4 Aceptación de solicitud de gerente de grupo** <!-- FALTA VISTA DE GERENTE DE GRUPO/SUPER ADMIN -->
 | Entrada  | Salida Esperada  | Salida Recibida  | Aprobado |
-|---|---|---|---|
+|---|---|---|:---:|
 | Se despliegan los datos al seleccionar el boton de revision de la solicitud | Despliegue de datos de la solicitud seleccionada | Se despliegan datos de texto, documentos de la solicitud, y botones para aceptar o rechazar solicitud | ✔️ |
 | Se acepta solicitud seleccionada de alta de compañia | Se almacenan los datos de la compañia en la base de datos | Registro de datos en base de datos de compañias | ✔️ |
 | Se rechaza solicitud seleccionada de alta de compañia | Se elimina solicitud de la lista de solicitudes | Se elimina solicitud de la lista de solicitudes | ✔️ |
@@ -323,7 +358,7 @@ En estas pruebas su objetivo es revisar la funcionalidad de la plataforma ignora
 
 #### **4.1.3.5 Aceptación de solicitud de vendedor** <!-- FALTA VISTA DE GERENTE DE GRUPO/SUPER ADMIN -->
 | Entrada  | Salida Esperada  | Salida Recibida  | Aprobado |
-|---|---|---|---|
+|---|---|---|:---:|
 | Se despliegan los datos al seleccionar el boton de revision de la solicitud | Despliegue de datos de la solicitud seleccionada | Se despliegan datos de texto, documentos de la solicitud, y botones para aceptar o rechazar solicitud | ✔️ |
 | Se acepta solicitud seleccionada de alta de compañia | Se almacenan los datos de la compañia en la base de datos | Registro de datos en base de datos de compañias | ✔️ |
 | Se rechaza solicitud seleccionada de alta de compañia | Se elimina solicitud de la lista de solicitudes | Se elimina solicitud de la lista de solicitudes | ✔️ |
@@ -331,7 +366,7 @@ En estas pruebas su objetivo es revisar la funcionalidad de la plataforma ignora
 
 #### **4.1.3.6 Aceptación de solicitud de prueba de manejo**
 | Entrada  | Salida Esperada  | Salida Recibida  | Aprobado |
-|---|---|---|---|
+|---|---|---|:---:|
 | Se despliegan los datos al seleccionar el boton de revision de la solicitud | Despliegue de datos de la solicitud seleccionada | Se despliegan datos de texto, documentos de la solicitud, y botones para aceptar o rechazar solicitud | ✔️ |
 | Se acepta solicitud seleccionada de alta de compañia | Se almacenan los datos de la compañia en la base de datos | Registro de datos en base de datos de compañias | ✔️ |
 | Se rechaza solicitud seleccionada de alta de compañia | Se elimina solicitud de la lista de solicitudes | Se elimina solicitud de la lista de solicitudes | ✔️ |
@@ -342,7 +377,7 @@ En estas pruebas su objetivo es revisar la funcionalidad de la plataforma ignora
 
 #### **4.1.4.1 Aceptación de Documentos**
 | Entrada  | Salida Esperada  | Salida Recibida  | Aprobado |
-|---|---|---|---|
+|---|---|---|:---:|
 |Documento es .pdf <br> Se subio un documento| Doumento subido exitosamente a base de datos|Doumento subido exitosamente a base de datos|✔️|
 |No se subio un documento| Carga de documento fallido con mensaje de error| El documento no se subió a la base de datos <br> *Mensaje de Error:* Documento no subido| ❌ |
 |Documento no es .pdf <br> Se subio un documento| Tipo de documento incorrecto con mensaje de error| Documento no se acepta en la base de datos <br> *Mensaje de Error:* Documento no es PDF| ❌ |
@@ -351,7 +386,7 @@ En estas pruebas su objetivo es revisar la funcionalidad de la plataforma ignora
 
 #### **4.1.4.2 Aceptación de imágenes**
 | Entrada | Salida Esperada | Salida Recibida | Aprobado |
-|---|---|---|---|
+|---|---|---|:---:|
 | El archivo es .jpg <br> Se subió un archivo de imagen | Imagen subida exitosamente a la base de datos | Imagen subida exitosamente a la base de datos | ✔️ |
 | No se subio archivo .jpg |  Carga de archivo jpg fallida con mensaje de error | El archivo de imagen no se subió a la base de datos <br> *Mensaje de Error:* Documento no subido | ❌ |
 | El archivo no es .jpg <se> Se subió un archivo de imagen | El tipo de archivo de imagen es incorrecto con mensaje de error | Imagen no aceptada en la base de datos <br> *Mensaje de Error:* Archivo no es .jpg | ❌ |
@@ -359,8 +394,10 @@ En estas pruebas su objetivo es revisar la funcionalidad de la plataforma ignora
 
 ### **4.1.5 Mostrar datos de disponibilidad de vehiculo a usuario**
 | Entrada | Salida Esperada | Salida Recibida | Aprobado |
-|---|---|---|---|
-| Se ingresa al vehículo de interés para ver su estado de disponibilidad | Se despliega la disponibilida
+|---|---|---|:---:|
+| Se ingresa el vehículo de interés para ver su estado de disponibilidad | Desplegar la disponibilidad | Auto disponible | ✔️ |
+| Se ingresa el vehículo de interés para ver su estado de disponibilidad | Desplegar disponibilidad | Auto no disponible | ❌ |
+| Se ingresa el vehículo de interés para ver su disponibilidad | Auto no disponible | Auto no disponible | ✔️ |
 <br>
 
 ### **4.1.6 Mostrar vistas de autos**
@@ -368,19 +405,40 @@ En estas pruebas su objetivo es revisar la funcionalidad de la plataforma ignora
 
 #### **4.1.6.1 Mostrar vistas de autos en la pagina principal**
 | Entrada | Salida Esperada | Salida Recibida | Aprobado |
-|---|---|---|---|
+|---|---|---|:---:|
 | Se ingresa a la pagina principal | Se despliega una serie de widgets con datos de vehiculos | Se despliega una serie de widgets con datos de vehiculos | ✔️ |
 <br>
 
 #### **4.1.6.2 Mostrar vistas de autos en la pagina de la agencia**
 | Entrada | Salida Esperada | Salida Recibida | Aprobado |
-|---|---|---|---|
+|---|---|---|:---:|
 | Se ingresa a la pagina de la agencia | Se despliega una serie de widgets con datos de vehiculos listados por la agencia | Se despliega una serie de widgets con datos de vehiculos | ✔️ |
+<br>
+
+### **4.1.7 Modificacion de comisiones**
+<br>
+
+### **4.1.7.1 Modificacion de comisiones por agencia**
+| Entrada | Salida Esperada | Salida Recibida | Aprobado |
+|---|---|---|:---:|
+| Numero flotante valido | Se modifica la comision de la agencia | Valor actualizado | ✔️ |
+| Numero flotante invalido | Se modifica la comision de la agencia | Valor no actualizado <br> *Mensaje de Error*: Ingrese un valor válido | ❌ |
+| Entrada de caracteres | Se modifica la comision de la agencia | Valor no actualizado <br> *Mensaje de Error*: Ingrese un valor válido | ❌ |
+| Campo vacío | Se modifica la comision de la agencia | Valor no actualizado <br> *Mensaje de Error*: Ingrese un valor | ❌ |
+<br>
+
+### **4.1.7.2 Modificacion de comisiones por vehiculo**
+| Entrada | Salida Esperada | Salida Recibida | Aprobado |
+|---|---|---|:---:|
+| Numero flotante valido | Se modifica la comision de vehiculos | Valor actualizado | ✔️ |
+| Numero flotante invalido | Se modifica la comision de vehiculos | Valor no actualizado <br> *Mensaje de Error*: Ingrese un valor válido | ❌ |
+| Entrada de caracteres | Se modifica la comision de vehiculos| Valor no actualizado <br> *Mensaje de Error*: Ingrese un valor válido | ❌ |
+| Campo vacío | Se modifica la comision de vehiculos | Valor no actualizado <br> *Mensaje de Error*: Ingrese un valor | ❌ |
 <br>
 
 ### **4.1.8 Busqueda guiada**
 | Entrada | Salida Esperada | Salida Recibida | Aprobado |
-|---|---|---|---|
+|---|---|---|:---:|
 |El usuario se ha registrado por primera vez en la página <br> El usuario selecciono "Continuar tour de la página"| Se muestran mensajes de que hace cada sección de la página | Empieza el "Tour por la página| ✔️ |
 |El usuario empezo "Tour por la página" <br> Dio click al botón de "Siguiente"| Se muestra la siguiente seccion del "Tour por la página"| Siguiente Paso| ✔️ |
 |El usuario se ha registrado por primera vez en la página <br> El usuario selecciono "Quiero explorar sin ayuda" |No se muestran mensajes de que hace cada sección de la página | No empieza el "Tour por la página| ❌ |
@@ -423,9 +481,46 @@ El usuario no se registro | Mostrar vista General| Vista General| ✔️ |
 |Selección "Recoger en dirección propia" <br> Campos llenado correctamentes| Direción valida| Dirección válida <br> Se continua con el proceso de <br> *Selección de forma de entrega*|✔️ |
 |Selección "Recoger en dirección propia" <br> Campos llenados incorrectamente| Dirección invalida con mensaje de error| Dirección inválida <br> *Mensaje de Error:* Dirección inválida |❌ |
 <br>
-a### **4.1.14 Seleccion de componentes de vehiculo por parte de usuario**
+### **4.1.14 Seleccion de componentes de vehiculo por parte de usuario**
 | Entrada | Salida Esperada | Salida Recibida | Aprobado |
 |---|---|---|:---:|
+|Usuario selecciono un campo adicional| Suma del componente más el precio actual| Nuevo precio del auto|✔️ |
+|Usuaro no selecciono un campo adicional | Precio default de auto | Precio default de auto|✔️ |
+
+<br>
+
+### **4.1.15 Muestra de datos del automovil**
+| Entrada | Salida Esperada | Salida Recibida | Aprobado |
+|---|---|---|:---:|
+|Auto registrado <br> 
+
+<br>
+
+### **4.1.16 Navegacion sin registro de usuario**
+| Entrada | Salida Esperada | Salida Recibida | Aprobado |
+|---|---|---|:---:|
+|Usuario registrado <br> Selección a botón de "Comprar" |Mostrar vista de Comprar|Vista de Compra| ✔️ |
+|Usuario registrado <br> Selección a botón de "Prueba de Manejo" |Mostrar vista de Prueba de Manejo|Vista de Solicitud Prueba| ✔️ |
+|Usuario registrado <br> Selección a botón de "Contactar Agencia" |Mostrar vista de Contactar Agencia|Vista de Contactar Agencia| ✔️ |
+|Usuario no registrado <br> Selección a botón de "Comprar" |Autorización de vista fallida <br>con mensaje de error|Usuario no autorizado<br>*Mensaje de Error*: Registrate o inicia sesión para realizar esta acción | ❌ |
+|Usuario no registrado <br> Selección a botón de "Prueba de Manejo" |Autorización de vista fallida <br>con mensaje de error|Usuario no autorizado<br>*Mensaje de Error*: Registrate o inicia sesión para realizar esta acción | ❌ |
+|Usuario no registrado <br> Selección a botón de "Contactar Agencia" |Autorización de vista fallida <br>con mensaje de error|Usuario no autorizado<br>*Mensaje de Error*: Registrate o inicia sesión para realizar esta acción | ❌ |
+
+<br>
+
+### **4.1.17 Muestra de widgets o campos requeridos seleccionados para comprar vehiculo**
+| Entrada | Salida Esperada | Salida Recibida | Aprobado |
+|---|---|---|:---:|
+|Número de documentos tiene un campo seleccionado <br> Nombre de documentos completo <br> Nombre válido  de documento<br> Selección de datos de usuario | Creación de página con número de documentos requerido <br> Mensaje para usuario con datos que se extraeran de su cuenta| Página Subida | ✔️ |
+|Número de documentos tiene un campo seleccionado <br> Nombre de documentos completo <br> Nombre válido  de documento <br> Sin selección de datos de usuario | Creación de página con número de documentos requerido| Página Subida | ✔️ |
+|Número de documentos tiene un campo seleccionado <br> Nombre de documentos incompleto  | Creación de página con número de documentos requerido <br> Mensaje para usuario con datos que se extraeran de su cuenta| Página Subida | ✔️ |
+|Número de documentos tiene un campo seleccionado <br> Nombre de documentos completo y con nombre válido <br> Sin selección de datos de usuario | Creación de página con número de documentos requerido| Página Subida | ✔️ |
+
+<br>
+
+### **4.2 Pruebas de Caja Blanca** 
+En estas pruebas su objetivo es revisar la funcionalidad de la plataforma en caso de que las pruebas de caja negra no hayan sido exitosas. Estas pruebas son más profundas puesto que estas se enfocan en la esctructura interna de la aplicación.
+
 
 
 
