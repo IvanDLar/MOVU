@@ -21,7 +21,6 @@
     - [**Manual de Desarrollador**](#manual-de-desarrollador)
     - [**Manual de Usario**](#manual-de-usario)
     - [**Recorridos**](#recorridos)
-  - [Se usarán los recorridos para validar en su totalidad el funcionamiento de algun requerimineot](#se-usarán-los-recorridos-para-validar-en-su-totalidad-el-funcionamiento-de-algun-requerimineot)
   - [**Pruebas Dinámicas**](#pruebas-dinámicas)
     - [**Pruebas Unitarias**](#pruebas-unitarias)
       - [**De Caja Negra**](#de-caja-negra)
@@ -93,8 +92,7 @@ Aqui va que pruebas haremos y por qué.
 ### **Manual de Usario**
 
 ### **Recorridos**
-Propósito de la prueba:
-Se usarán los recorridos para validar en su totalidad el funcionamiento de algun requerimineot
+
 ---
 ## **Pruebas Dinámicas**
 
