@@ -1,0 +1,33 @@
+Miguel: 
+Munji:
+Yela:
+
+Inicio de sesion y registro 
+    Login de usuario,
+    Registro de usuario,
+    Registro de vehiculo,
+
+Aceptacion de usuarios
+    Aceptacion de solicitud de compañia,
+    Aceptacion de solicitud de agencia,
+    Aceptacion de solicitud de gerente de agencia,
+    Aceptacion de solicitud de gerente de grupo,
+    Aceptacion de solicitud de vendedor,
+    Aceptacion de pruebas de manejo,
+
+Aceptacion de datos
+    Aceptacion de documentos,
+    Aceptacion de imagenes,
+
+Mostrar datos de disponibilidad de vehiculo a usuario
+
+Mostrar vistas de autos en la pagina principal
+
+Modificar comisiones
+
+Busqueda guiada
+
+Muestra de opciones de pago
+
+Muestra de diferentes paginas o widgets segun el rol
+
