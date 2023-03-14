@@ -17,7 +17,7 @@
     Aceptacion de documentos,
     Aceptacion de imagenes, -->
 
-MB 4.1.5 Mostrar datos de disponibilidad de vehiculo a usuario
+<!-- MB 4.1.5 Mostrar datos de disponibilidad de vehiculo a usuario -->
 
 <!-- JM 4.1.6 Mostrar vistas de autos
     Mostrar vistas en la pagina principal
@@ -37,11 +37,11 @@ MB 4.1.12 Encriptacion de datos de usuario
 
 <!-- AY 4.1.13 Seleccion de forma de entrega -->
 
-AY 4.1.14 Seleccion de componentes de vehiculo por parte de usuario
+<!-- AY 4.1.14 Seleccion de componentes de vehiculo por parte de usuario -->
 
 AY 4.1.15 Muestra de datos del automovil 
 
-AY 4.1.16 Navegacion sin registro de usuario
+<!-- AY 4.1.16 Navegacion sin registro de usuario -->
 
 AY 4.1.17 Muestra de widgets o campos requeridos seleccionados para comprar vehiculo 
 
