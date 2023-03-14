@@ -1,52 +1,48 @@
-Miguel: 
-Munji:
-Yela:
-
-Inicio de sesion y registro 
+<!-- MB 4.1.2 Inicio de sesion y registro  
     Login de usuario,
     Registro de usuario,
     Registro de vehiculo,
     Registro de agencia,
-    Registro de compañia,
+    Registro de compañia,-->
 
-Aceptacion de solicitudes
+<!-- JM 4.1.3 Aceptacion de solicitudes
     Aceptacion de solicitud de compañia,
     Aceptacion de solicitud de agencia,
     Aceptacion de solicitud de gerente de agencia,
     Aceptacion de solicitud de gerente de grupo,
     Aceptacion de solicitud de vendedor,
-    Aceptacion de solicitud de prueba de manejo,
+    Aceptacion de solicitud de prueba de manejo, -->
 
-Aceptacion de datos embedidos
+<!-- 4.1.4 Aceptacion de datos embedidos
     Aceptacion de documentos,
-    Aceptacion de imagenes,
+    Aceptacion de imagenes, -->
 
-Mostrar datos de disponibilidad de vehiculo a usuario
+MB 4.1.5 Mostrar datos de disponibilidad de vehiculo a usuario
 
-Mostrar vistas de autos en la pagina principal!
+<!-- JM 4.1.6 Mostrar vistas de autos
+    Mostrar vistas en la pagina principal
+    Mostrar vistas de autos en la pagina de la agencia -->
 
-Modificacion de comisiones
+MB 4.1.7 Modificacion de comisiones
 
-Busqueda guiada
+<!-- AY 4.1.8 Busqueda guiada -->
 
-Muestra de opciones de pago
+MB 4.1.9 Muestra de opciones de pago
 
-Muestra de diferentes paginas o widgets segun el rol
+<!-- AY 4.1.10 Muestra de diferentes paginas o widgets segun el rol -->
 
-Aplicacion de ofertas al precio del automovil
+<!-- AY 4.1.11 Aplicacion de ofertas al precio del automovil -->
 
-Encriptacion de datos de usuario
+MB 4.1.12 Encriptacion de datos de usuario
 
-Seleccion de forma de entrega
+<!-- AY 4.1.13 Seleccion de forma de entrega -->
 
-Seleccion de componentes de vehiculo
+AY 4.1.14 Seleccion de componentes de vehiculo por parte de usuario
 
-Muestra de datos del automovil
+AY 4.1.15 Muestra de datos del automovil 
 
-Mostrar vistas de autos en la pagina de la agencia!
+AY 4.1.16 Navegacion sin registro de usuario
 
-21?
+AY 4.1.17 Muestra de widgets o campos requeridos seleccionados para comprar vehiculo 
 
-22? Seleccion de campos requeridos para comprar vehiculo
-
-Busqueda con lenguaje natural
+MB 4.1.18 Busqueda con lenguaje natural

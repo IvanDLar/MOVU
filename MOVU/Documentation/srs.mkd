@@ -157,9 +157,9 @@ Los requerimientos ayudarán a saber como debe de funcionar la plataforma para c
 | 19 | La pagina de cada automovil debe contener detalles del automovil, incluyendo datos del fabricante. | Requiere un desglose de los datos del vehículo como su ficha tecnica, y escripcion del fabricante. |
 | 20 | La vista de vehículos disponibles en inventario dentro de una agencia deben de mostrarse en el orden que determine la agencia. | Requiere de un listado de vehiculos disponibles o no, con datos generales del vehiculo como una imagen, nobre, precio, cantidad disponible, y ubicacion del vehiculo disponible. |
 | 21 | La aplicación permite navegar libremente sin necesidad de crear una cuenta. | Cualquier persona puede ingresar a la aplicación para ver la oferta y de la misma sin la necesidad de convertirse en usuario, si quiere realizar una transacción, debe de crearse una cuenta.|
-<!-- | 22 | En la vista del coche individual, el usuario debe de poder ver información importante del coche, tal cómo las caracteristicas mecanicas, la ficha tecnica, el precio, ubicación de vehículo etc... | Todos los usuarios tendrán a su disposición las herramientas necesarias para poder informarse de la mejor manera posible sobre cada uno de los vehiculos dentro del sistema. | --> 19!
-| 23 | Las agencias deberán poder modificar que información le piden al usuario registrado para poder realizar alguna compra de un vehiculo y/o requieran de una prueba de manejo | Requiere de un forms dinamico, donde las agencias puedan añadir o quitar elementos para pedir información personal al usuario registrado.
-| 24 | El sistema de busqueda con lenguaje natural debe arrojar un listado de vistas de autos segun las caracteristicas ingresadas en la barra de busqueda. | Se requiere de "pattern matching" con datos de los automoviles almacenados la base de datos. |
+| 22 | Las agencias deberán poder modificar que información le piden al usuario registrado para poder realizar alguna compra de un vehiculo y/o requieran de una prueba de manejo | Requiere de un forms dinamico, donde las agencias puedan añadir o quitar elementos para pedir información personal al usuario registrado.
+| 23 | El sistema de busqueda con lenguaje natural debe arrojar un listado de vistas de autos segun las caracteristicas ingresadas en la barra de busqueda. | Se requiere de "pattern matching" con datos de los automoviles almacenados la base de datos. |
+| 24 |  | |
 
 <br>
 
@@ -188,27 +188,6 @@ Los requerimientos ayudarán a saber como debe de funcionar la plataforma para c
 | 18 | Al desplegar imagenes de los vehiculos, se mostrará su visualziacion desde distintos ángulos, mostrando imagenes segun el color seleccionado. | Requiere de campos seleccionables de las imagenes subidas por las agencias. |
 | 19 | El sistema podrá detectar la configuración de la computadora del usuario para tener un modo obcuro que sea personalizado por este mismo.|Requiere de un sistema que acceda la configuración de la computadora del usuario y edite la paleta de colores de la págona. |
 ---
-
-<!-- ## **4. Pruebas de Software** 
-<br>
-
-### **4.1 Pruebas de Caja Negra** 
-En estas pruebas su objetivo es revisar la funcionalidad de la plataforma ignorando su parte interna.
-
-
-#### **4.1.2 Login**
-<br>
-
-| Entrada  | Salida Esperada  | Salida Recibida  | Aprobado |
-|---|---|---|---|
-| Nombre de Usuario Existente <br> Contraseña Correcta  | Login Exitoso  | El usuario ha ingresado exitosamente  |  ✔️ |
-| Nombre de Usuario Existente <br> Contraseña Incorrecta  | Login Fallido con mensaje de error  | El usuario no puede ingresar <br> *Mensaje de Error*: Credenciales Incorrectas  |  ✔️ |
-| Nombre de Usuario Existente <br> Contraseña Correcta  | El Usuario ha ingresado exitosamente  | El usuario no puede ingresar <br> *Mensaje de Error*: Credenciales Incorrectas  |  ❌ |
-
-#### **4.1.3 Template**
-<br> -->
-
-
 <br>
 
 ## **4. Arquitectura del Software** 
