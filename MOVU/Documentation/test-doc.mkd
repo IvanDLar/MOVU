@@ -1,4 +1,138 @@
-## **4. Pruebas de Software** 
+# **Documento de Pruebas de Software**
+
+## Historial de Documento
+
+|Fecha|Version|Descripción|Autor|
+| ---|   ---     | --- | :--- |
+|<13/03/23> |<1.0>| Pruebas de Caja Negra y descripcion de contenidos. |Andrea Yela González <br>Juan Muniain Otero <br>Miguel Angel Bustamante Perez|
+|<13/03/23> |<1.0>| Dependencias |Emiliio Sibaja Villarreal|
+
+# **Tabla de Contenidos**
+
+- [**Documento de Pruebas de Software**](#documento-de-pruebas-de-software)
+  - [Historial de Documento](#historial-de-documento)
+- [**Tabla de Contenidos**](#tabla-de-contenidos)
+  - [**Introducción**](#introducción)
+  - [**Objetivos**](#objetivos)
+  - [**Dependencias**](#dependencias)
+  - [**Alcance**](#alcance)
+- [**Estrategias de pruebas**](#estrategias-de-pruebas)
+  - [**Pruebas Estáticas**](#pruebas-estáticas)
+    - [**Manual de Desarrollador**](#manual-de-desarrollador)
+    - [**Manual de Usario**](#manual-de-usario)
+    - [**Recorridos**](#recorridos)
+  - [Se usarán los recorridos para validar en su totalidad el funcionamiento de algun requerimineot](#se-usarán-los-recorridos-para-validar-en-su-totalidad-el-funcionamiento-de-algun-requerimineot)
+  - [**Pruebas Dinámicas**](#pruebas-dinámicas)
+    - [**Pruebas Unitarias**](#pruebas-unitarias)
+      - [**De Caja Negra**](#de-caja-negra)
+      - [**De Caja Blanca**](#de-caja-blanca)
+    - [**Pruebas de Integración**](#pruebas-de-integración)
+  - [**Proceso de manejo de pruebas**](#proceso-de-manejo-de-pruebas)
+    - [**Descripción**](#descripción)
+    - [**Tabla de roles**](#tabla-de-roles)
+    - [**Plan de comunicación**](#plan-de-comunicación)
+    - [**Cronograma**](#cronograma)
+  - [**Ambiente de Pruebas**](#ambiente-de-pruebas)
+- [**4. Pruebas de Software**](#4-pruebas-de-software)
+    - [**4.1 Pruebas de Caja Negra**](#41-pruebas-de-caja-negra)
+    - [**4.1.2 Inicio de sesion y registro de usuario**](#412-inicio-de-sesion-y-registro-de-usuario)
+      - [**4.1.2.1 Login**](#4121-login)
+      - [**4.1.2.2 Registro**](#4122-registro)
+    - [**4.1.3 Aceptación de Documentos**](#413-aceptación-de-documentos)
+    - [**4.1.4 Aceptación de imágenes**](#414-aceptación-de-imágenes)
+  - [Conclusiones](#conclusiones)
+
+## **Introducción**
+
+## **Objetivos**
+
+El presente docuemento para el proyecto MOVU tiene los siguientes objetivos:
+
+- Identificar las pruebas necesarias para satisfacer los requerimientos solicitados
+- Describir de manera detallada cada prueba que se va a realizar
+- Agregar orden y calidad al desarrollo al tener un plan previamente establecido, sobre el qué y el por qué se harán.
+- Asegurar la calidad de la aplicacion en tanto a su funcionalidad, probando componentes que impliquen transferencia de datos.
+
+## **Dependencias**
+Lista de eventos o milestones que deben ser completados antes de comenzar cierta actividad de pruebas.
+
+| No.  | Tipo de prueba  | Prueba  | Dependencia |
+|---|---|---|---|
+1|Prueba unitaria  |Inicio de sesión y registro   |Página web y base de datos conectados   |
+2|Prueba unitraria   |Conexión a la base de datos   | Base de datos creada y desplegada   |
+3|Prueba unitaria   |Conexión con la API   |   |
+4|Prueba unitaria   |Subir documentos   |   |
+5|Prueba de integración   |Compra de un coche   |   |
+6|Prueba de integración   |Solicitar una prueba de manejo   |   |
+7|Prueba de integración  |Busqueda de elementos   |   |
+8|   |Registro de vehículos   |   |
+9|   |El gerente de    |   |
+
+
+## **Alcance**
+Cabe recalcar que no se realizarán pruebas de tipo no funcionales (carga, volumen, seguridad) debido a la limitante de tiempo que se nos ha impuesto para realizar el desarrollo del proyecto.
+| Prueba  | Tipo de Prueba  | Alcance  | Interesados
+|---|---|---|---|
+Manual de Usuario   | Estatica | ---INVESTIGAR--- | Usuario Final, Project Manager (Scrum Master) y CEO |
+Manual de Desarrollador   | Estatica | --- INVESTIGAR --- | Desarrolladores y Project Manager (Scrum Master) y Tester  |
+Recorridos   | Estatica | Se usarán para validar y cerrar el desarrollo de los modulos y/o requerimientos funcionales. |  Desarrolladores, Project Manager (Scrum Master), CEO y Testers|
+Pruebas de Informales   | Dinamica | Todos los desarrollos, requerimientos funcionales y no funcionales. |  Desarrolladores |
+Pruebas de Caja Negra   | Dinamica | Todos los Requerimientos funcionales, en caso de tener tiempo algunos no funcionales | Desarrolladores  |
+Pruebas de Caja Blanca (Recorrido Cobertura)  | Dinamica | Todos los Requierimientos funcionales, solamente si las pruebas de caja negra fallan. | Desarrolladores, Testers |
+Pruebas de Caja Blanca (Recorrido Basico)   | Dinamica | Todos los Requerimientos funcionales, solamente si las pruebas de recorrido de cobertura no lanzan error. | Desarrolladores, Testers y Project Manager (Scrum Master)  | Dinamica | |
+Pruebas de Aceptación   | Dinamica | Requerimientos funcionales previo a ser aceptados en la rama principal. | Desarrolladores, Testers |
+
+
+# **Estrategias de pruebas**
+Aqui va que pruebas haremos y por qué.
+
+## **Pruebas Estáticas**
+**Stakeholders:** Usuario Final, Project Manager y SCRUM Manager
+### **Manual de Desarrollador** 
+
+### **Manual de Usario**
+
+### **Recorridos**
+Propósito de la prueba:
+Se usarán los recorridos para validar en su totalidad el funcionamiento de algun requerimineot
+---
+## **Pruebas Dinámicas**
+
+
+### **Pruebas Unitarias**
+
+#### **De Caja Negra**
+Propósito de la prueba:
+Verificar las entradas y salidas de las diferentes unidades del software (funciones, clases, etc...) ignorando su funcionamiento interno.
+
+**Alcance:**
+- Se aplicarán sobre todos los requerimientos funcionales.
+- Se busca probar todas las entradas posibles de las funciones del programa.
+- Se buscan evaluar las salidas del programa segun las entradas ingresadas.
+
+#### **De Caja Blanca**
+Proposito de la prueba:
+Probar todos los posibles caminos a cubrir en la aplicacion mediante pruebas de camino basico, y realizar pruebas de cobertura de codigo para medir la utilidad del codigo segun la cantidad de lineas de codigio escritas.
+
+*Alcance:*
+- Se mediran la utilidad del codigo contabilizando todas las lineas de codigo escritas con pruebas de cobertura.
+- Se probaran todos los caminos posibles segun los resultados posibles de las funciones escritas (recorrido básico), en caso de que las pruebas de caja negra, o los recorridos mediante pruebas estaticas resulten en fallas.
+
+### **Pruebas de Integración**
+
+## **Proceso de manejo de pruebas**
+A que le harémos las pruebas 
+(ej.- todos los requerimientos ( funcionales y funcionales )le harémos pruebas informales)
+
+### **Descripción** 
+### **Tabla de roles** 
+### **Plan de comunicación**
+### **Cronograma**
+
+## **Ambiente de Pruebas**
+Definir estándares sobre los cuales nos basaremos para realizar las pruebas (preubas de integración, no importa que software se use, pero para pruebas de aceptación es importante cerrar todos las pestañas y procesos no importantes.)
+
+# **4. Pruebas de Software** 
 Definir orden de pruebas, y sobre cuales requerimientos se aplicaran las diferentes pruebas
 
 Formal: Developer (no se comunica)
@@ -6,9 +140,8 @@ Caja negra: Developer, Developer, testers (comunica a tester)
 Caja blanca: Developer, PM, testers
 Integracion: Developer, PM, Scrum Master
 
-Plan de comunicacion (tempalte): tablas, a quien se comunica
+Plan de comunicación (tempalte): tablas, a quien se comunica
 
-Ambiente (computadora con x caracteristicas, siguiendo lineamientos para el setup del ambiente), integracion y aceptacion
 <br><br>
 
 ### **4.1 Pruebas de Caja Negra** 
@@ -24,7 +157,8 @@ En estas pruebas su objetivo es revisar la funcionalidad de la plataforma ignora
 | Nombre de usuario existente <br> Contraseña Correcta  | Login Exitoso  | El usuario ha ingresado exitosamente  | ✔️ |
 | Nombre de usuario existente <br> Contraseña Incorrecta  | Login Fallido con mensaje de error  | El usuario no puede ingresar <br> *Mensaje de Error*: Credenciales Incorrectas  | ✔️ |
 | Nombre de usuario no existente <br> | Login fallido con mensaje de error  | El usuario no puede ingresar <br> *Mensaje de Error*: Credenciales Incorrectas  | ❌ |
-<br><br>
+| Nombre de usuario invalido <br> | Login fallido con mensaje de error | El usuario no puede ingresar <br> *Mensaje de Error*: Credenciales Incorrectas  | ❌ |
+<br>
 
 #### **4.1.2.2 Registro**
 | Entrada  | Salida Esperada  | Salida Recibida  | Aprobado |
@@ -33,4 +167,25 @@ En estas pruebas su objetivo es revisar la funcionalidad de la plataforma ignora
 | Nombre de usuario existente <br> Contraseña invalida  | Registro fallido con mensajes de error  | El usuario no puede registrarse <br> *Mensaje de Error*: El usuario ya existe <br> *Mensaje de Error*: Contraseña invalida | ✔️ |
 | Nombre de usuario no existente <br> Contraseña valida | Registro exitoso  | El usuario se ha registrado exitosamente  | ✔️ |
 | Nombre de usuario no existente <br> Contraseña invalida | Registro fallido con mensaje de error  | El usuario no puede registrarse <br> *Mensaje de Error*: Contraseña invalida  | ✔️ |
-<br><br>
+<br>
+
+### **4.1.3 Aceptación de Documentos**
+| Entrada  | Salida Esperada  | Salida Recibida  | Aprobado |
+|---|---|---|---|
+|Documento es .pdf <br> Se subio un documento| Doumento subido exitosamente a base de datos|Doumento subido exitosamente a base de datos|✔️|
+|No se subio un documento| Carga de documento fallido con mensaje de error| El documento no se subió a la base de datos <br> *Mensaje de Error:* Documento no subido| ❌ |
+|Documento no es .pdf <br> Se subio un documento| Tipo de documento incorrecto con mensaje de error| Documento no se acepta en la base de datos <br> *Mensaje de Error:* Documento no es PDF| ❌ |
+|Documento es .pdf <br> Se subio un documento <br>Nombre de documento inválido| Nombre de documento invalido con mensaje de error| Documento no se acepta en la base de datos <br> *Mensaje de Error:* Nombre de documento inválido| ❌ |
+<br>
+
+### **4.1.4 Aceptación de imágenes**
+| Entrada | Salida Esperada | Salida Recibida | Aprobado |
+|---|---|---|---|
+| El archivo es .jpg <br> Se subió un archivo de imagen | Imagen subida exitosamente a la base de datos | Imagen subida exitosamente a la base de datos | ✔️ |
+| No se subio archivo .jpg |  Carga de archivo jpg fallida con mensaje de error | El archivo de imagen no se subió a la base de datos <br> *Mensaje de Error:* Documento no subido | ❌ |
+| El archivo no es .jpg <se> Se subió un archivo de imagen | El tipo de archivo de imagen es incorrecto con mensaje de error | Imagen no aceptada en la base de datos <br> *Mensaje de Error:* Archivo no es .jpg | ❌ |
+
+
+
+
+## Conclusiones
