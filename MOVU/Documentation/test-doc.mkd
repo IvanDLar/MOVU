@@ -1,0 +1,36 @@
+## **4. Pruebas de Software** 
+Definir orden de pruebas, y sobre cuales requerimientos se aplicaran las diferentes pruebas
+
+Formal: Developer (no se comunica)
+Caja negra: Developer, Developer, testers (comunica a tester)
+Caja blanca: Developer, PM, testers
+Integracion: Developer, PM, Scrum Master
+
+Plan de comunicacion (tempalte): tablas, a quien se comunica
+
+Ambiente (computadora con x caracteristicas, siguiendo lineamientos para el setup del ambiente), integracion y aceptacion
+<br><br>
+
+### **4.1 Pruebas de Caja Negra** 
+En estas pruebas su objetivo es revisar la funcionalidad de la plataforma ignorando su parte interna.
+<br><br>
+
+### **4.1.2 Inicio de sesion y registro de usuario**
+<br>
+
+#### **4.1.2.1 Login**
+| Entrada  | Salida Esperada  | Salida Recibida  | Aprobado |
+|---|---|---|---|
+| Nombre de usuario existente <br> Contraseña Correcta  | Login Exitoso  | El usuario ha ingresado exitosamente  | ✔️ |
+| Nombre de usuario existente <br> Contraseña Incorrecta  | Login Fallido con mensaje de error  | El usuario no puede ingresar <br> *Mensaje de Error*: Credenciales Incorrectas  | ✔️ |
+| Nombre de usuario no existente <br> | Login fallido con mensaje de error  | El usuario no puede ingresar <br> *Mensaje de Error*: Credenciales Incorrectas  | ❌ |
+<br><br>
+
+#### **4.1.2.2 Registro**
+| Entrada  | Salida Esperada  | Salida Recibida  | Aprobado |
+|---|---|---|---|
+| Nombre de usuario existente <br> Contraseña valida  | Registro fallido con mensaje de error  | El usuario no puede registrarse <br> *Mensaje de Error*: El usuario ya existe  | ✔️ |
+| Nombre de usuario existente <br> Contraseña invalida  | Registro fallido con mensajes de error  | El usuario no puede registrarse <br> *Mensaje de Error*: El usuario ya existe <br> *Mensaje de Error*: Contraseña invalida | ✔️ |
+| Nombre de usuario no existente <br> Contraseña valida | Registro exitoso  | El usuario se ha registrado exitosamente  | ✔️ |
+| Nombre de usuario no existente <br> Contraseña invalida | Registro fallido con mensaje de error  | El usuario no puede registrarse <br> *Mensaje de Error*: Contraseña invalida  | ✔️ |
+<br><br>
