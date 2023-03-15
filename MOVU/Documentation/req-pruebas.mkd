@@ -23,26 +23,26 @@
     Mostrar vistas en la pagina principal
     Mostrar vistas de autos en la pagina de la agencia -->
 
-MB 4.1.7 Modificacion de comisiones
+<!-- MB 4.1.7 Modificacion de comisiones -->
 
 <!-- AY 4.1.8 Busqueda guiada -->
 
-MB 4.1.9 Muestra de opciones de pago
+<!-- MB 4.1.9 Muestra de opciones de pago -->
 
 <!-- AY 4.1.10 Muestra de diferentes paginas o widgets segun el rol -->
 
 <!-- AY 4.1.11 Aplicacion de ofertas al precio del automovil -->
 
-MB 4.1.12 Encriptacion de datos de usuario
+<!-- MB 4.1.12 Encriptacion de datos de usuario -->
 
 <!-- AY 4.1.13 Seleccion de forma de entrega -->
 
 <!-- AY 4.1.14 Seleccion de componentes de vehiculo por parte de usuario -->
 
-AY 4.1.15 Muestra de datos del automovil 
+<!-- AY 4.1.15 Muestra de datos del automovil  -->
 
 <!-- AY 4.1.16 Navegacion sin registro de usuario -->
 
-AY 4.1.17 Muestra de widgets o campos requeridos seleccionados para comprar vehiculo 
+<!-- AY 4.1.17 Muestra de widgets o campos requeridos seleccionados para comprar vehiculo  -->
 
-MB 4.1.18 Busqueda con lenguaje natural
+<!-- MB 4.1.18 Busqueda con lenguaje natural -->
