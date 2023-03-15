@@ -7,10 +7,10 @@
 |<13/03/23> |<1.0>| Pruebas de Caja Negra y descripcion de contenidos. |Andrea Yela González <br>Juan Muniain Otero <br>Miguel Angel Bustamante Perez|
 |<13/03/23> |<1.0>| Dependencias |Emilio Sibaja Villarreal|
 |<13/03/23> |<1.0>| Alcance y estrategias |Ivan Diaz Lara|
-|<14/03/23> |<2.0>| Pruebas de Caja Negra y descripcion de contenidos. |Andrea Yela González <br>Juan Muniain Otero <br>Miguel Angel Bustamante Perez|
-|<14/03/23> |<2.0>| Proceso de Manejo de Pruebas |Ivan Diaz Lara|
-|<14/03/23> |<2.0>| Dependencias |Emilio Sibaja Villarreal|
 |<14/03/23> |<2.1>| Pruebas de Caja Negra y descripcion de contenidos. |Andrea Yela González <br>Juan Muniain Otero <br>Miguel Angel Bustamante Perez|
+|<14/03/23> |<2.1>| Proceso de Manejo de Pruebas |Ivan Diaz Lara|
+|<14/03/23> |<2.1>| Dependencias |Emilio Sibaja Villarreal|
+|<14/03/23> |<2.2>| Pruebas de Caja Negra y descripcion de contenidos. |Andrea Yela González <br>Juan Muniain Otero <br>Miguel Angel Bustamante Perez|
 |<14/03/23> |<2.3>| Pruebas de Caja Negra y descripcion de contenidos. |Andrea Yela González <br>Miguel Angel Bustamante Perez|
 <br><br>
 # **1. Tabla de Contenidos**
@@ -66,14 +66,17 @@
     - [**4.1.8 Busqueda guiada**](#418-busqueda-guiada)
     - [**4.1.10 Muestra de diferentes paginas o widgets segun el rol**](#4110-muestra-de-diferentes-paginas-o-widgets-segun-el-rol)
     - [**4.1.11 Aplicacion de ofertas al precio del automovil**](#4111-aplicacion-de-ofertas-al-precio-del-automovil)
+    - [**4.1.12 Encriptacion de datos de usuario**](#4112-encriptacion-de-datos-de-usuario)
     - [**4.1.13 Seleccion de forma de entrega**](#4113-seleccion-de-forma-de-entrega)
       - [**4.1.13.1 Aceptación de dirección**](#41131-aceptación-de-dirección)
     - [**4.1.14 Seleccion de componentes de vehiculo por parte de usuario**](#4114-seleccion-de-componentes-de-vehiculo-por-parte-de-usuario)
     - [**4.1.15 Muestra de datos del automovil**](#4115-muestra-de-datos-del-automovil)
     - [**4.1.16 Navegacion sin registro de usuario**](#4116-navegacion-sin-registro-de-usuario)
     - [**4.1.17 Muestra de widgets o campos requeridos seleccionados para comprar vehiculo**](#4117-muestra-de-widgets-o-campos-requeridos-seleccionados-para-comprar-vehiculo)
+    - [**4.1.18 Busqueda con lenguaje natural**](#4118-busqueda-con-lenguaje-natural)
+  - [| Una cadena de texto que tiene un vehículo que no existe o no está disponible | El buscador reconoce la información brindada y devuelve un mensaje de búsqueda no encontrada | *Mensaje*: El automovil que estás tratando de buscar no está disponible | ✔️ |](#-una-cadena-de-texto-que-tiene-un-vehículo-que-no-existe-o-no-está-disponible--el-buscador-reconoce-la-información-brindada-y-devuelve-un-mensaje-de-búsqueda-no-encontrada--mensaje-el-automovil-que-estás-tratando-de-buscar-no-está-disponible--️-)
     - [**4.2 Pruebas de Caja Blanca**](#42-pruebas-de-caja-blanca)
-  - [Conclusiones](#conclusiones)
+  - [**Conclusiones**](#conclusiones)
 
 # **Introducción**
 
