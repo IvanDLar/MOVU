@@ -11,6 +11,7 @@
 |<14/03/23> |<2.0>| Proceso de Manejo de Pruebas |Ivan Diaz Lara|
 |<14/03/23> |<2.0>| Dependencias |Emilio Sibaja Villarreal|
 |<14/03/23> |<2.1>| Pruebas de Caja Negra y descripcion de contenidos. |Andrea Yela González <br>Juan Muniain Otero <br>Miguel Angel Bustamante Perez|
+|<14/03/23> |<2.3>| Pruebas de Caja Negra y descripcion de contenidos. |Andrea Yela González <br>Miguel Angel Bustamante Perez|
 <br><br>
 # **1. Tabla de Contenidos**
 - [**Documento de Pruebas de Software**](#documento-de-pruebas-de-software)
@@ -468,6 +469,16 @@ El usuario no se registro | Mostrar vista General| Vista General| ✔️ |
 | Auto seleccionado no fue registrado | Auto no autorizado con mensaje de error|Auto no autorizado<br>*Mensaje de Error*: El vehiculo seleccionado no cuenta con registro| ❌ |
 <br>
 
+### **4.1.12 Encriptacion de datos de usuario**
+| Entrada | Salida Esperada | Salida Recibida | Aprobado |
+|---|---|---|:---:|
+| Usuario ingresa un dato (campo de entrada) | Dato encriptado y string almacenado | Dato almacenado y encriptado | ✔️ |
+| Usuario ingresa un dato (imagen) | Dato encriptado e imagen almacenada| Dato almacenado y encriptado | ✔️ |
+| Usuario ingresa un dato (documento) | Dato encriptado y documento almacenado | Dato almacenado y encriptado | ✔️ |
+| Usuario ingresa un dato (campo de entrada) | Dato encriptado y string almacenado | Dato no almacenado y no encriptado | ❌ |
+| Usuario ingresa un dato (imagen) | Dato encriptado e imagen almacenada| Dato no almacenado y no encriptado | ❌ |
+| Usuario ingresa un dato (documento) | Dato encriptado y documento almacenado | Dato no almacenado y no encriptado | ❌ |
+
 ### **4.1.13 Seleccion de forma de entrega**
 | Entrada | Salida Esperada | Salida Recibida | Aprobado |
 |---|---|---|:---:|
@@ -492,7 +503,8 @@ El usuario no se registro | Mostrar vista General| Vista General| ✔️ |
 ### **4.1.15 Muestra de datos del automovil**
 | Entrada | Salida Esperada | Salida Recibida | Aprobado |
 |---|---|---|:---:|
-|Auto registrado <br> 
+|Auto registrado <br> El auto tenga disponibilidad | Mostrar información de auto| Informacion de auto | ✔️ |
+|Auto registrado <br> El auto no tenga disponibilidad | No mostrar información de auto| Auto no disponible | ❌ |
 
 <br>
 
@@ -511,12 +523,20 @@ El usuario no se registro | Mostrar vista General| Vista General| ✔️ |
 ### **4.1.17 Muestra de widgets o campos requeridos seleccionados para comprar vehiculo**
 | Entrada | Salida Esperada | Salida Recibida | Aprobado |
 |---|---|---|:---:|
-|Número de documentos tiene un campo seleccionado <br> Nombre de documentos completo <br> Nombre válido  de documento<br> Selección de datos de usuario | Creación de página con número de documentos requerido <br> Mensaje para usuario con datos que se extraeran de su cuenta| Página Subida | ✔️ |
+|Número de documentos tiene un campo seleccionado <br> Nombre de documentos completo <br> Nombre válido de documento<br> Selección de datos de usuario | Creación de página con número de documentos requerido <br> Mensaje para usuario con datos que se extraeran de su cuenta| Página Subida | ✔️ |
 |Número de documentos tiene un campo seleccionado <br> Nombre de documentos completo <br> Nombre válido  de documento <br> Sin selección de datos de usuario | Creación de página con número de documentos requerido| Página Subida | ✔️ |
-|Número de documentos tiene un campo seleccionado <br> Nombre de documentos incompleto  | Creación de página con número de documentos requerido <br> Mensaje para usuario con datos que se extraeran de su cuenta| Página Subida | ✔️ |
-|Número de documentos tiene un campo seleccionado <br> Nombre de documentos completo y con nombre válido <br> Sin selección de datos de usuario | Creación de página con número de documentos requerido| Página Subida | ✔️ |
+|Número de documentos tiene un campo seleccionado <br> Nombre de documentos incompleto  | Error al subir página| Campos incompletos <br> *Mensaje de Error:* Completar datos de documentos |❌ |
+|Número de documentos tiene un campo seleccionado <br> Nombre de documentos completo <br> Nombre inválido de documento |Error al subir página| Nombre inválido <br> *Mensaje de Error:* Nombre de documento inválido |❌ |
 
 <br>
+
+### **4.1.18 Busqueda con lenguaje natural**
+| Entrada | Salida Esperada | Salida Recibida | Aprobado |
+|---|---|---|:---:|
+| Una cadena de texto con características de un vehículo| El buscador reconoce la información brindada y devuelve vehículos correspondientes al texto ingresado | Vehículos que cumplan con los campos del string ingresado | ✔️ |
+| Una cadena de texto que no tiene que ver con vehículos | El buscador no reconoce la información brindada y devuelve un error | *Mensaje de Error*: La información ingresada no tiene que ver con un automovil | ❌ |
+| Una cadena de texto que tiene un vehículo que no existe o no está disponible | El buscador reconoce la información brindada y devuelve un mensaje de búsqueda no encontrada | *Mensaje*: El automovil que estás tratando de buscar no está disponible | ✔️ |
+---
 
 ### **4.2 Pruebas de Caja Blanca** 
 En estas pruebas su objetivo es revisar la funcionalidad de la plataforma en caso de que las pruebas de caja negra no hayan sido exitosas. Estas pruebas son más profundas puesto que estas se enfocan en la esctructura interna de la aplicación.
@@ -524,5 +544,6 @@ En estas pruebas su objetivo es revisar la funcionalidad de la plataforma en cas
 
 
 
+<br>
 
-## Conclusiones
+## **Conclusiones**
