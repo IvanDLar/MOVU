@@ -27,7 +27,7 @@
 
 <!-- AY 4.1.8 Busqueda guiada -->
 
-<!-- MB 4.1.9 Muestra de opciones de pago -->
+MB 4.1.9 Muestra de opciones de pago
 
 <!-- AY 4.1.10 Muestra de diferentes paginas o widgets segun el rol -->
 
