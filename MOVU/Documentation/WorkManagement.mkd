@@ -63,5 +63,25 @@ Para llevar un buen control de que es lo que estará entrando a la rama principa
 Si no se cumplen ambos requisitos, el PR `no podrá ser mergeado` a la rama principal.
 
 # Project Management
+Para llevar el manejo de versiones en el proyecto además de utilizar GitHub se hará uso de una herramienta extra conocida como GitKraken que facilita el manejo de commits y branches de una forma más visual y amigable con el usuario
 
 ## Organización
+Los pasos que hay que seguir al utilizar GitKraken de acuerdo con esta forma de trabajo son los siguientes:
+
+<ol>
+    <li>
+        Descargar GitKraken desde su página oficial (es necesaria una cuenta de GitHub de estudiante para no pagar por esta herramienta)
+    </li>
+    <li>
+        Iniciar sesión con la cuenta de GitHub destinada al proyecto.
+    </li>
+    <li>
+        Dar click en la opción de clonar repositorio
+    </li>
+
+![]('../../img/clone-repo.png')
+    <li>
+        Una vez clonado, aparecerá una ventana similar a la siguiente:
+    </li>
+
+</ol>
