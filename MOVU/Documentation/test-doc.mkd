@@ -1,6 +1,6 @@
 # **Documento de Pruebas de Software**
 
-## Historial de Documento
+## **Historial de Documento**
 
 |Fecha|Version|Descripción|Autor|
 | ---|   ---     | --- | :--- |
@@ -12,10 +12,13 @@
 |<14/03/23> |<2.1>| Dependencias |Emilio Sibaja Villarreal|
 |<14/03/23> |<2.2>| Pruebas de Caja Negra y descripcion de contenidos. |Andrea Yela González <br>Juan Muniain Otero <br>Miguel Angel Bustamante Perez|
 |<14/03/23> |<2.3>| Pruebas de Caja Negra y descripcion de contenidos. |Andrea Yela González <br>Miguel Angel Bustamante Perez|
+|<15/03/23> |<3.0>| Prueba de Caja Blanca y su conexión con Caja Negra |Andrea Yela González <br>Miguel Angel Bustamante Perez<br>Emilio Sibaja Villarreal<br>Juan Muniain Otero|
+|<15/03/23> |<3.0>| Cronograma | Juan Muniain Otero|
 <br><br>
+
 # **1. Tabla de Contenidos**
 - [**Documento de Pruebas de Software**](#documento-de-pruebas-de-software)
-  - [Historial de Documento](#historial-de-documento)
+  - [**Historial de Documento**](#historial-de-documento)
 - [**1. Tabla de Contenidos**](#1-tabla-de-contenidos)
 - [**Introducción**](#introducción)
 - [**Objetivos**](#objetivos)
@@ -74,11 +77,12 @@
     - [**4.1.16 Navegacion sin registro de usuario**](#4116-navegacion-sin-registro-de-usuario)
     - [**4.1.17 Muestra de widgets o campos requeridos seleccionados para comprar vehiculo**](#4117-muestra-de-widgets-o-campos-requeridos-seleccionados-para-comprar-vehiculo)
     - [**4.1.18 Busqueda con lenguaje natural**](#4118-busqueda-con-lenguaje-natural)
-  - [| Una cadena de texto que tiene un vehículo que no existe o no está disponible | El buscador reconoce la información brindada y devuelve un mensaje de búsqueda no encontrada | *Mensaje*: El automovil que estás tratando de buscar no está disponible | ✔️ |](#-una-cadena-de-texto-que-tiene-un-vehículo-que-no-existe-o-no-está-disponible--el-buscador-reconoce-la-información-brindada-y-devuelve-un-mensaje-de-búsqueda-no-encontrada--mensaje-el-automovil-que-estás-tratando-de-buscar-no-está-disponible--️-)
     - [**4.2 Pruebas de Caja Blanca**](#42-pruebas-de-caja-blanca)
   - [**Conclusiones**](#conclusiones)
 
 # **Introducción**
+Este proyecto 
+
 
 # **Objetivos**
 El presente docuemento para el proyecto MOVU tiene los siguientes objetivos:
@@ -100,7 +104,7 @@ Lista de eventos o milestones que deben ser completados antes de comenzar cierta
 5|Prueba unitaria   |El gerente de grupo administra a los gerentes de agencia    |   |
 6|Prueba unitaria   |El super administrador valida/rechaza solicitudes de agencias   |   |
 7|Prueba unitaria   |El super administrador  revisa y elimina gerentes registrados   |   |
-  8|Pruebas de unitarias   |Registro de vehículos   |   |
+8|Pruebas de unitarias   |Registro de vehículos   |   |
 9|Prueba de integración   |Conexión con la API   |Página web y base de datos   |
 10|Prueba de integración   |Compra de un coche   |   |
 11|Prueba de integración   |Solicitar una prueba de manejo   |Página web    |
@@ -162,6 +166,7 @@ En este documento se definirán las siguientes secciónes:
 Propósito de la prueba: <br>
 Buscan explorar de forma no regulada el sistema, intentando simular los diversons caminos que diferentes tipos de usuarios podrían recorrer.
 <br>
+![Flujo de Recorridos]("../img/pruebas-recorrido.png")
 
 **Alcance:**
 - Se aplicarán solamente en modulos de requerimientos que estén completamente terminados (dentro del scope del proyecto).
@@ -228,16 +233,16 @@ A que le harémos las pruebas
 
 ## **Plan de comunicación**
 
-| Tipo de Prueba  | Metodología de Aplicación  | A quién se le reporta | 
-|---|---|---|
-| Prueba Informal | 1.- Se aplicarán durante el desarrollo de cualquier requerimiento. <br> 2.- Están basadas principalmente en la intuición y habilidad del desarrollador.   | No se reportan a nadie.  |
-| Peer Review | 1.- Se aplicarán durante el desarrollo de cualquier requerimiento <br>  | Se reporta: <br> 1.- Entre los equipos de desarrollo, se deberá tener cómo minimo el visto bueno del Developer Lead y 2 developers para ser aceptados. |
-| Prueba de Caja Negra | 1.- Se aplicarán al concluir estructuras como metodos, funciones y clases. | Se reporta: <br> 1.- Testers | 
-| Prueba de Caja Blanca (Cobertura) | 1.- Se realizan por el equipo de testers y developers, invocando todos los puntos de entrada, y sus respectivas salidas. <br> 2.- Es necesario probar todas las condiciones con todas sus posibles entradas, consideranto su impacto independiente a otras condiciones. | Se reporta a: <br> 1.- Tester Lead <br> 2.- Product Manager |
-| Prueba de Caja Blanca (Camino Basico) |1.- Se requiere probar cada camino de la aplicacion la menos una vez  | Se reporta a: <br> 1.- Tester Lead <br> 2.- Product Manager <br> 3.- Developer Lead |
-| Pruebas de Integración |1.- Se realizan por el equipo de testers para probar un conjunto de elementos o grupo de modulos. | Se reporta a: <br> 1.- Developer Leader <br> 2.- Tester Leader |
-| Prueba de Aceptación |1.- Se realizan por el equipo de testers para comprobar que el sistema se adecua a los requerimientos establecidos, o bien los criterios de aceptacion. | Se reporta a: <br> 1.- Product Manager |
-| Recorrido |1.- El o los lideres de desarrollo llevan a cabo recorridos de las diferentes partes del producto, recibiendo retroalimentacion de posibles cambios o fallas. | Se reporta a: <br> 1.- Product Manager <br> 2.- Product Owner |
+| Tipo de Prueba  | Metodología de Aplicación  | Responsables | A quién se le reporta | 
+|---|---|---|---|
+| Prueba Informal | 1.- Se aplicarán durante el desarrollo de cualquier requerimiento. <br> 2.- Están basadas principalmente en la intuición y habilidad del desarrollador. | Developers | No se reportan a nadie.  |
+| Peer Review | 1.- Se aplicarán durante el desarrollo de cualquier requerimiento <br>  | Developers |  Se reporta: <br> 1.- Entre los equipos de desarrollo, se deberá tener cómo minimo el visto bueno del Developer Lead y 2 developers para ser aceptados. |
+| Prueba de Caja Negra | 1.- Se aplicarán al concluir estructuras como metodos, funciones y clases. | Developers y Testers | Se reporta: <br> 1.- Test Lead <br> 2.- Developer Lead | 
+| Prueba de Caja Blanca (Cobertura) | 1.- Se realizan por el equipo de testers y developers, invocando todos los puntos de entrada, y sus respectivas salidas. <br> 2.- Es necesario probar todas las condiciones con todas sus posibles entradas, consideranto su impacto independiente a otras condiciones. <br> 3.- En caso de que no sea util la prueba de cobertura, se procederá a realizar una refactorización del codigo en el desarrollo de requerimientos que no sean de gran importancia. <br> 4.- No se realizarán pruebas de caja blanca para requerimientos funcionales. | Developers, Testers y Product Manager | Se reporta a: <br> 1.- Tester Lead <br> 2.- Developer Lead  |
+| Prueba de Caja Blanca (Camino Basico) | 1.- No se realizarán pruebas de caja blanca para requerimientos funcionales. <br> 2.- Se requiere probar cada camino de la aplicacion la menos una vez. | Developers, Testers, Product Managers | Se reporta a: <br> 1.- Tester Lead <br> 2.- Developer Lead |
+| Pruebas de Integración |1.- Se realizan por el equipo de testers para probar un conjunto de elementos o grupo de modulos. | Developers y Testers | Se reporta a: <br> 1.- Developer Leader <br> 2.- Tester Leader |
+| Prueba de Aceptación |1.- Se realizan por el equipo de testers para comprobar que el sistema se adecua a los requerimientos establecidos, o bien los criterios de aceptacion. | Developers, Testers, Scrum Master y Project Manager | Se reporta a: <br> 1.- Product Owner |
+| Recorrido |1.- El o los lideres de desarrollo llevan a cabo recorridos de las diferentes partes del producto, recibiendo retroalimentacion de posibles cambios o fallas. | Developers, Testers, Scrum Master, Project Manager y Usuarios finales | Se reporta a: <br> 1.- Product Owner |
 <br>
 
 ## **Cronograma**
@@ -245,25 +250,22 @@ A que le harémos las pruebas
 | Rol | Abreviacion |
 | --- | --- |
 | Developer | D |
-| Developer Lead | DL |
 | Tester | T |
-| Tester Lead | TL |
-| Architect | A |
-| Architect Lead | AL |
-| DevOps | DO |
-| DevOps Lead | DOL |
+| Scrum Master | SM |
 | Project Manager | PM |
-| Product Owner | PO |
+| Usuario Final | UF |
 <br>
 
 | Tipo de pruebas | Sprint 1 | Sprint 2 | Sprint 3 | Sprint 4 | Sprint 5 | Sprint 6 | Sprint 7 | Sprint 8 | Sprint 9 | Sprint 10 |  
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Pruebas de caja negra | x | D, DL | D, DL | D, DL | D, DL | D, DL | D, DL | D, DL | D, DL | D, DL |
-| Pruebas de integracion | x | x | x  | D, T  | D, T | D, T | D, T | D, T | D, T | D, T |
-| Pruebas de aceptacion | x | x | x | x | T, TL | T, TL | T, TL | T, TL | T, TL | T, TL |
-| Recorridos | x | x | x | x | DL, TL, PM, PO | x | x | x | x | DL, TL, PM, PO |
+| Pruebas de caja negra | x | D, T | D, T | D, T | D, T | D, T | D, T | D, T | D, T | x |
+| Pruebas de caja blanca | x | x | D, T, PM | D, T, PM | D, T, PM | D, T, PM | D, T, PM | D, T, PM | D, T, PM | x |
+| Pruebas de integracion | x | x | x  | D, T  | D, T | D, T | D, T | D, T | D, T | x |
+| Pruebas de aceptacion | x | x | x | x | D, T, SM, PM | D, T, SM, PM | D, T, SM, PM | D, T, SM, PM | D, T, SM, PM | D, T, SM, PM |
+| Recorridos | x | x | x | x | x | x | x | x | x | D, T, SM, PM, UF |
 <br>
-*Asumimos que se comenzaran a realizar pruebas de aceptacion a partir de la quinta semana*
+
+*Se asume que se comenzaran a realizar pruebas de aceptación a partir de la quinta semana*
 *Los testers se involucrarán en pruebas de integración y aceptación. El Test Lead estará involucrado solo en pruebas de aceptacion.*
 
 # **Ambiente de Pruebas**
@@ -280,24 +282,48 @@ En estas pruebas su objetivo es revisar la funcionalidad de la plataforma ignora
 <br>
 
 #### **4.1.2.1 Login**
+|Descripción|
+|---|
+|<br><br><br><br>|
+||
+
 | Entrada  | Salida Esperada  | Salida Recibida  | Aprobado |
 |---|---|---|:---:|
 | Nombre de usuario existente <br> Contraseña Correcta  | Login Exitoso  | El usuario ha ingresado exitosamente  | ✔️ |
 | Nombre de usuario existente <br> Contraseña Incorrecta  | Login Fallido con mensaje de error  | El usuario no puede ingresar <br> *Mensaje de Error*: Credenciales Incorrectas  | ❌ |
 | Nombre de usuario no existente <br> | Login fallido con mensaje de error  | El usuario no puede ingresar <br> *Mensaje de Error*: Credenciales Incorrectas  | ❌ |
 | Nombre de usuario invalido <br> | Login fallido con mensaje de error | El usuario no puede ingresar <br> *Mensaje de Error*: Credenciales Incorrectas  | ❌ |
-<br>
+
+|Comentarios|
+|---|
+|<br><br><br><br>|
+||
 
 #### **4.1.2.2 Registro de usuario**
+|Descripción|
+|---|
+|<br><br><br><br>|
+||
+
 | Entrada  | Salida Esperada  | Salida Recibida  | Aprobado |
 |---|---|---|:---:|
 | Nombre de usuario existente <br> Contraseña valida  | Registro fallido con mensaje de error  | El usuario no puede registrarse <br> *Mensaje de Error*: El usuario ya existe  | ✔️ |
 | Nombre de usuario existente <br> Contraseña invalida  | Registro fallido con mensajes de error  | El usuario no puede registrarse <br> *Mensaje de Error*: El usuario ya existe <br> *Mensaje de Error*: Contraseña invalida | ❌ |
 | Nombre de usuario no existente <br> Contraseña valida | Registro exitoso  | El usuario se ha registrado exitosamente  | ✔️ |
 | Nombre de usuario no existente <br> Contraseña invalida | Registro fallido con mensaje de error  | El usuario no puede registrarse <br> *Mensaje de Error*: Contraseña invalida  | ❌ |
-<br>
+
+|Comentarios|
+|---|
+|<br><br><br><br>|
+||
+
 
 #### **4.1.2.3 Registro de vehiculo**
+|Descripción|
+|---|
+|<br><br><br><br>|
+||
+
 | Entrada  | Salida Esperada  | Salida Recibida  | Aprobado |
 |---|---|---|:---:|
 | Entradas de texto válidas | Registro exitoso | El vehículo ha sido registrado <br> | ✔️ |
@@ -305,9 +331,18 @@ En estas pruebas su objetivo es revisar la funcionalidad de la plataforma ignora
 | Entradas de texto válidas pero descripción del vehículo incorrecta/inadeacuada |  El vehículo no puede registrarse | El vehículo no puede registrarse <br> *Mensaje de error*: Información extra inválida | ❌ | 
 | Entradas de texto válidas pero falta de precio | Datos no válidos | El vehículo no puede registrarse <br> *Mensaje de error*: Precio no ingresado | ❌ |
 | Campos vacíos | Registro no exitoso | Datos de texto vacíos *Mensaje de error*: Campos vacíos, ingresar información faltante | ❌ |
-<br>
+
+|Comentarios|
+|---|
+|<br><br><br><br>|
+||
 
 #### **4.1.2.4 Registro de agencia**
+|Descripción|
+|---|
+|<br><br><br><br>|
+||
+
 | Entrada  | Salida Esperada  | Salida Recibida  | Aprobado |
 |---|---|---|:---:|
 | Entradas de texto válidas | Registro exitoso | El vehículo ha sido registrado | ✔️ |
@@ -315,132 +350,267 @@ En estas pruebas su objetivo es revisar la funcionalidad de la plataforma ignora
 | Entradas de texto válidas pero ubicación de la agencia inválida |  La agencia no puede registrarse | La agencia no puede registrarse <br> *Mensaje de error*: Información de ubicación no válida | ❌ | 
 | Entradas de texto válidas pero falta datos de inventario | Datos no válidos | La agencia no puede registrarse <br> *Mensaje de error*: Inventario no asociado/registrado | ❌ |
 | Campos vacíos | Registro no exitoso | Datos de texto vacíos *Mensaje de error*: Campos vacíos, ingresar información faltante | ❌ |
-<br>
+
+|Comentarios|
+|---|
+|<br><br><br><br>|
+||
 
 #### **4.1.2.5 Registro de compañia**
+|Descripción|
+|---|
+|<br><br><br><br>|
+||
+
 | Entrada  | Salida Esperada  | Salida Recibida  | Aprobado |
 |---|---|---|:---:|
 | Entradas de texto válidas | Registro exitoso | La compañia ha sido registrada | ✔️ |
 | Entradas de texto inválidas | Datos de texto inválidos | La compañia no puede registrarse <br> *Mensaje de error*: La compañia no pudo registrarse, datos de texto inválidos | ❌ |
 | Campos vacíos | Registro no exitoso | Datos de texto vacíos *Mensaje de error*: Campos vacíos, ingresar información faltante | ❌ |
-<br>
+
+|Comentarios|
+|---|
+|<br><br><br><br>|
+||
 
 ### **4.1.3 Aceptación de Solicitudes**
 <br>
 
 #### **4.1.3.1 Aceptación de solicitud de grupo**
+|Descripción|
+|---|
+|<br><br><br><br>|
+||
+
 | Entrada  | Salida Esperada  | Salida Recibida  | Aprobado |
 |---|---|---|:---:|
 | Se despliegan los datos al seleccionar el boton de revision de la solicitud | Despliegue de datos de la solicitud seleccionada | Se despliegan datos de texto, documentos de la solicitud, y botones para aceptar o rechazar solicitud | ✔️ |
 | Se acepta solicitud seleccionada de alta de compañia | Se almacenan los datos de la compañia en la base de datos | Registro de datos en base de datos de compañias | ✔️ |
 | Se rechaza solicitud seleccionada de alta de compañia | Se elimina solicitud de la lista de solicitudes | Se elimina solicitud de la lista de solicitudes | ✔️ |
-<br>
+
+|Comentarios|
+|---|
+|<br><br><br><br>|
+||
 
 #### **4.1.3.2 Aceptación de solicitud de agencia**
+|Descripción|
+|---|
+|<br><br><br><br>|
+||
+
 | Entrada  | Salida Esperada  | Salida Recibida  | Aprobado |
 |---|---|---|:---:|
 | Se despliegan los datos al seleccionar el boton de revision de la solicitud | Despliegue de datos de la solicitud seleccionada | Se despliegan datos de texto, documentos de la solicitud, y botones para aceptar o rechazar solicitud | ✔️ |
 | Se acepta solicitud seleccionada de alta de compañia | Se almacenan los datos de la compañia en la base de datos | Registro de datos en base de datos de compañias | ✔️ |
 | Se rechaza solicitud seleccionada de alta de compañia | Se elimina solicitud de la lista de solicitudes | Se elimina solicitud de la lista de solicitudes | ✔️ |
-<br>
+
+|Comentarios|
+|---|
+|<br><br><br><br>|
+||
 
 #### **4.1.3.3 Aceptación de solicitud de gerente de agencia** <!-- FALTA VISTA DE GERENTE DE GRUPO/SUPER ADMIN -->
+|Descripción|
+|---|
+|<br><br><br><br>|
+||
+
 | Entrada  | Salida Esperada  | Salida Recibida  | Aprobado |
 |---|---|---|:---:|
 | Se despliegan los datos al seleccionar el boton de revision de la solicitud | Despliegue de datos de la solicitud seleccionada | Se despliegan datos de texto, documentos de la solicitud, y botones para aceptar o rechazar solicitud | ✔️ |
 | Se acepta solicitud seleccionada de alta de compañia | Se almacenan los datos de la compañia en la base de datos | Registro de datos en base de datos de compañias | ✔️ |
 | Se rechaza solicitud seleccionada de alta de compañia | Se elimina solicitud de la lista de solicitudes | Se elimina solicitud de la lista de solicitudes | ✔️ |
-<br>
+
+|Comentarios|
+|---|
+|<br><br><br><br>|
+||
 
 #### **4.1.3.4 Aceptación de solicitud de gerente de grupo** <!-- FALTA VISTA DE GERENTE DE GRUPO/SUPER ADMIN -->
+|Descripción|
+|---|
+|<br><br><br><br>|
+||
+
 | Entrada  | Salida Esperada  | Salida Recibida  | Aprobado |
 |---|---|---|:---:|
 | Se despliegan los datos al seleccionar el boton de revision de la solicitud | Despliegue de datos de la solicitud seleccionada | Se despliegan datos de texto, documentos de la solicitud, y botones para aceptar o rechazar solicitud | ✔️ |
 | Se acepta solicitud seleccionada de alta de compañia | Se almacenan los datos de la compañia en la base de datos | Registro de datos en base de datos de compañias | ✔️ |
 | Se rechaza solicitud seleccionada de alta de compañia | Se elimina solicitud de la lista de solicitudes | Se elimina solicitud de la lista de solicitudes | ✔️ |
-<br>
+
+|Comentarios|
+|---|
+|<br><br><br><br>|
+||
 
 #### **4.1.3.5 Aceptación de solicitud de vendedor** <!-- FALTA VISTA DE GERENTE DE GRUPO/SUPER ADMIN -->
+|Descripción|
+|---|
+|<br><br><br><br>|
+||
+
 | Entrada  | Salida Esperada  | Salida Recibida  | Aprobado |
 |---|---|---|:---:|
 | Se despliegan los datos al seleccionar el boton de revision de la solicitud | Despliegue de datos de la solicitud seleccionada | Se despliegan datos de texto, documentos de la solicitud, y botones para aceptar o rechazar solicitud | ✔️ |
 | Se acepta solicitud seleccionada de alta de compañia | Se almacenan los datos de la compañia en la base de datos | Registro de datos en base de datos de compañias | ✔️ |
 | Se rechaza solicitud seleccionada de alta de compañia | Se elimina solicitud de la lista de solicitudes | Se elimina solicitud de la lista de solicitudes | ✔️ |
-<br>
+
+|Comentarios|
+|---|
+|<br><br><br><br>|
+||
 
 #### **4.1.3.6 Aceptación de solicitud de prueba de manejo**
+|Descripción|
+|---|
+|<br><br><br><br>|
+||
+
 | Entrada  | Salida Esperada  | Salida Recibida  | Aprobado |
 |---|---|---|:---:|
 | Se despliegan los datos al seleccionar el boton de revision de la solicitud | Despliegue de datos de la solicitud seleccionada | Se despliegan datos de texto, documentos de la solicitud, y botones para aceptar o rechazar solicitud | ✔️ |
 | Se acepta solicitud seleccionada de alta de compañia | Se almacenan los datos de la compañia en la base de datos | Registro de datos en base de datos de compañias | ✔️ |
 | Se rechaza solicitud seleccionada de alta de compañia | Se elimina solicitud de la lista de solicitudes | Se elimina solicitud de la lista de solicitudes | ✔️ |
-<br>
+
+|Comentarios|
+|---|
+|<br><br><br><br>|
+||
 
 ### **4.1.4 Aceptación de datos embedidos**
 <br>
 
 #### **4.1.4.1 Aceptación de Documentos**
+|Descripción|
+|---|
+|<br><br><br><br>|
+||
+
 | Entrada  | Salida Esperada  | Salida Recibida  | Aprobado |
 |---|---|---|:---:|
 |Documento es .pdf <br> Se subio un documento| Doumento subido exitosamente a base de datos|Doumento subido exitosamente a base de datos|✔️|
 |No se subio un documento| Carga de documento fallido con mensaje de error| El documento no se subió a la base de datos <br> *Mensaje de Error:* Documento no subido| ❌ |
 |Documento no es .pdf <br> Se subio un documento| Tipo de documento incorrecto con mensaje de error| Documento no se acepta en la base de datos <br> *Mensaje de Error:* Documento no es PDF| ❌ |
 |Documento es .pdf <br> Se subio un documento <br>Nombre de documento inválido| Nombre de documento invalido con mensaje de error| Documento no se acepta en la base de datos <br> *Mensaje de Error:* Nombre de documento inválido| ❌ |
-<br>
+
+|Comentarios|
+|---|
+|<br><br><br><br>|
+||
 
 #### **4.1.4.2 Aceptación de imágenes**
+|Descripción|
+|---|
+|<br><br><br><br>|
+||
+
 | Entrada | Salida Esperada | Salida Recibida | Aprobado |
 |---|---|---|:---:|
 | El archivo es .jpg <br> Se subió un archivo de imagen | Imagen subida exitosamente a la base de datos | Imagen subida exitosamente a la base de datos | ✔️ |
 | No se subio archivo .jpg |  Carga de archivo jpg fallida con mensaje de error | El archivo de imagen no se subió a la base de datos <br> *Mensaje de Error:* Documento no subido | ❌ |
 | El archivo no es .jpg <se> Se subió un archivo de imagen | El tipo de archivo de imagen es incorrecto con mensaje de error | Imagen no aceptada en la base de datos <br> *Mensaje de Error:* Archivo no es .jpg | ❌ |
-<br>
+
+|Comentarios|
+|---|
+|<br><br><br><br>|
+||
 
 ### **4.1.5 Mostrar datos de disponibilidad de vehiculo a usuario**
+|Descripción|
+|---|
+|<br><br><br><br>|
+||
+
 | Entrada | Salida Esperada | Salida Recibida | Aprobado |
 |---|---|---|:---:|
 | Se ingresa el vehículo de interés para ver su estado de disponibilidad | Desplegar la disponibilidad | Auto disponible | ✔️ |
 | Se ingresa el vehículo de interés para ver su estado de disponibilidad | Desplegar disponibilidad | Auto no disponible | ❌ |
 | Se ingresa el vehículo de interés para ver su disponibilidad | Auto no disponible | Auto no disponible | ✔️ |
-<br>
+
+|Comentarios|
+|---|
+|<br><br><br><br>|
+||
 
 ### **4.1.6 Mostrar vistas de autos**
 <br>
 
 #### **4.1.6.1 Mostrar vistas de autos en la pagina principal**
+|Descripción|
+|---|
+|<br><br><br><br>|
+||
+
 | Entrada | Salida Esperada | Salida Recibida | Aprobado |
 |---|---|---|:---:|
 | Se ingresa a la pagina principal | Se despliega una serie de widgets con datos de vehiculos | Se despliega una serie de widgets con datos de vehiculos | ✔️ |
-<br>
+
+|Comentarios|
+|---|
+|<br><br><br><br>|
+||
 
 #### **4.1.6.2 Mostrar vistas de autos en la pagina de la agencia**
+|Descripción|
+|---|
+|<br><br><br><br>|
+||
+
 | Entrada | Salida Esperada | Salida Recibida | Aprobado |
 |---|---|---|:---:|
 | Se ingresa a la pagina de la agencia | Se despliega una serie de widgets con datos de vehiculos listados por la agencia | Se despliega una serie de widgets con datos de vehiculos | ✔️ |
-<br>
+
+|Comentarios|
+|---|
+|<br><br><br><br>|
+||
 
 ### **4.1.7 Modificacion de comisiones**
 <br>
 
 ### **4.1.7.1 Modificacion de comisiones por agencia**
+|Descripción|
+|---|
+|<br><br><br><br>|
+||
+
 | Entrada | Salida Esperada | Salida Recibida | Aprobado |
 |---|---|---|:---:|
 | Numero flotante valido | Se modifica la comision de la agencia | Valor actualizado | ✔️ |
 | Numero flotante invalido | Se modifica la comision de la agencia | Valor no actualizado <br> *Mensaje de Error*: Ingrese un valor válido | ❌ |
 | Entrada de caracteres | Se modifica la comision de la agencia | Valor no actualizado <br> *Mensaje de Error*: Ingrese un valor válido | ❌ |
 | Campo vacío | Se modifica la comision de la agencia | Valor no actualizado <br> *Mensaje de Error*: Ingrese un valor | ❌ |
-<br>
+
+|Comentarios|
+|---|
+|<br><br><br><br>|
+||
 
 ### **4.1.7.2 Modificacion de comisiones por vehiculo**
+|Descripción|
+|---|
+|<br><br><br><br>|
+||
+
 | Entrada | Salida Esperada | Salida Recibida | Aprobado |
 |---|---|---|:---:|
 | Numero flotante valido | Se modifica la comision de vehiculos | Valor actualizado | ✔️ |
 | Numero flotante invalido | Se modifica la comision de vehiculos | Valor no actualizado <br> *Mensaje de Error*: Ingrese un valor válido | ❌ |
 | Entrada de caracteres | Se modifica la comision de vehiculos| Valor no actualizado <br> *Mensaje de Error*: Ingrese un valor válido | ❌ |
 | Campo vacío | Se modifica la comision de vehiculos | Valor no actualizado <br> *Mensaje de Error*: Ingrese un valor | ❌ |
-<br>
+
+|Comentarios|
+|---|
+|<br><br><br><br>|
+||
 
 ### **4.1.8 Busqueda guiada**
+|Descripción|
+|---|
+|<br><br><br><br>|
+||
+
 | Entrada | Salida Esperada | Salida Recibida | Aprobado |
 |---|---|---|:---:|
 |El usuario se ha registrado por primera vez en la página <br> El usuario selecciono "Continuar tour de la página"| Se muestran mensajes de que hace cada sección de la página | Empieza el "Tour por la página| ✔️ |
@@ -448,9 +618,34 @@ En estas pruebas su objetivo es revisar la funcionalidad de la plataforma ignora
 |El usuario se ha registrado por primera vez en la página <br> El usuario selecciono "Quiero explorar sin ayuda" |No se muestran mensajes de que hace cada sección de la página | No empieza el "Tour por la página| ❌ |
 |No es la primera vez que el usuario se registra |No se muestran mensajes de que hace cada sección de la página | No empieza el "Tour por la página| ❌ |
 |El usuario empezo "Tour por la página" <br> Dio click al botón de "Quiero explorar sin ayuda"| Se acaba el "Tour por la página"| Mostrar página normal| ❌ |
-<br>
+
+|Comentarios|
+|---|
+|<br><br><br><br>|
+||
+
+### **4.1.9 Muestra opciones de pago**
+|Descripción|
+|---|
+|<br><br><br><br>|
+||
+
+| Entrada | Salida Esperada | Salida Recibida | Aprobado |
+|---|---|---|:---:|
+| El usuario al momento de realizar la compra puede seleccionar las opciones de pago disponibles dando click en ese botón | Se muestran las opciones de pago a modo de lista | Se muestran las opciones de pago a modo de lista | ✔️ |
+| El usuario al momento de realizar la compra puede seleccionar las opciones de pago disponibles dando click en ese botón | Se muestran las opciones de pago a modo de lista | No se muestran las opciones de pago a modo de lista | ❌ |
+
+|Comentarios|
+|---|
+|<br><br><br><br>|
+||
 
 ### **4.1.10 Muestra de diferentes paginas o widgets segun el rol**
+|Descripción|
+|---|
+|<br><br><br><br>|
+||
+
 | Entrada | Salida Esperada | Salida Recibida | Aprobado |
 |---|---|---|:---:|
 El usuario no se registro | Mostrar vista General| Vista General| ✔️ |
@@ -462,17 +657,35 @@ El usuario no se registro | Mostrar vista General| Vista General| ✔️ |
 |El usuario fue registrado exitosamente <br> Tiene etiqueta de Gerente de Grupo <br> Su solicitud no fue aceptada| Autorización de vista fallida <br>con mensaje de error|Usuario no autorizado<br>*Mensaje de Error*: No tiene autorización para esta vista | ❌ |
 |El usuario fue registrado exitosamente <br> Tiene etiqueta de Gerente de Agencia <br> Su solicitud no fue aceptada|Autorización de vista fallida <br>con mensaje de error|Usuario no autorizado<br>*Mensaje de Error*: No tiene autorización para esta vista | ❌ |
 |El usuario fue registrado exitosamente <br> Tiene etiqueta de Vendedor <br> Su solicitud no fue aceptada|Autorización de vista fallida <br>con mensaje de error|Usuario no autorizado<br>*Mensaje de Error*: No tiene autorización para esta vista | ❌ |
-<br>
+
+|Comentarios|
+|---|
+|<br><br><br><br>|
+||
 
 ### **4.1.11 Aplicacion de ofertas al precio del automovil**
+|Descripción|
+|---|
+|<br><br><br><br>|
+||
+
 | Entrada | Salida Esperada | Salida Recibida | Aprobado |
 |---|---|---|:---:|
 | Auto seleccionado fue registrado exitosamente <br> Campo de descuento contiene números| Cambio de precio de vehiculo según el descuento puesto| Descuento aplicado |✔️ |
 | Auto seleccionado fue registrado exitosamente <br> Campo de descuento contiene otros caracteres que no sean números| Descuento fallido con mensaje de error|Caracteres invalidos<br>*Mensaje de Error*: Ingrese solo números | ❌ |
 | Auto seleccionado no fue registrado | Auto no autorizado con mensaje de error|Auto no autorizado<br>*Mensaje de Error*: El vehiculo seleccionado no cuenta con registro| ❌ |
-<br>
+
+|Comentarios|
+|---|
+|<br><br><br><br>|
+||
 
 ### **4.1.12 Encriptacion de datos de usuario**
+|Descripción|
+|---|
+|<br><br><br><br>|
+||
+
 | Entrada | Salida Esperada | Salida Recibida | Aprobado |
 |---|---|---|:---:|
 | Usuario ingresa un dato (campo de entrada) | Dato encriptado y string almacenado | Dato almacenado y encriptado | ✔️ |
@@ -482,36 +695,82 @@ El usuario no se registro | Mostrar vista General| Vista General| ✔️ |
 | Usuario ingresa un dato (imagen) | Dato encriptado e imagen almacenada| Dato no almacenado y no encriptado | ❌ |
 | Usuario ingresa un dato (documento) | Dato encriptado y documento almacenado | Dato no almacenado y no encriptado | ❌ |
 
+|Comentarios|
+|---|
+|<br><br><br><br>|
+||
+
 ### **4.1.13 Seleccion de forma de entrega**
+|Descripción|
+|---|
+|<br><br><br><br>|
+||
+
 | Entrada | Salida Esperada | Salida Recibida | Aprobado |
 |---|---|---|:---:|
 |Compra de auto validada <br> Selección "Recoger en Agencia"| Aceptación de dirección| Dirección aceptada|✔️ |
 |Compra de auto validada <br> Selección "Recoger en dirección propia" <br> Dirección aceptada| Aceptación de dirección| Dirección aceptada|✔️ |
 |Compra de auto no validada | No se muestra opción de seleccion de dirección | Usuario no autorizado<br>*Mensaje de Error*: Se necesita validar la compra | ❌ |
 
+|Comentarios|
+|---|
+|<br><br><br><br>|
+||
+
 #### **4.1.13.1 Aceptación de dirección**
+|Descripción|
+|---|
+|<br><br><br><br>|
+||
+
 | Entrada | Salida Esperada | Salida Recibida | Aprobado |
 |---|---|---|:---:|
 |Selección "Recoger en dirección propia" <br> Campos llenado correctamentes| Direción valida| Dirección válida <br> Se continua con el proceso de <br> *Selección de forma de entrega*|✔️ |
 |Selección "Recoger en dirección propia" <br> Campos llenados incorrectamente| Dirección invalida con mensaje de error| Dirección inválida <br> *Mensaje de Error:* Dirección inválida |❌ |
-<br>
+
+|Comentarios|
+|---|
+|<br><br><br><br>|
+||
+
 ### **4.1.14 Seleccion de componentes de vehiculo por parte de usuario**
+|Descripción|
+|---|
+|<br><br><br><br>|
+||
+
 | Entrada | Salida Esperada | Salida Recibida | Aprobado |
 |---|---|---|:---:|
 |Usuario selecciono un campo adicional| Suma del componente más el precio actual| Nuevo precio del auto|✔️ |
 |Usuaro no selecciono un campo adicional | Precio default de auto | Precio default de auto|✔️ |
 
-<br>
+|Comentarios|
+|---|
+|<br><br><br><br>|
+||
 
 ### **4.1.15 Muestra de datos del automovil**
+|Descripción|
+|---|
+|<br><br><br><br>|
+||
+
 | Entrada | Salida Esperada | Salida Recibida | Aprobado |
 |---|---|---|:---:|
 |Auto registrado <br> El auto tenga disponibilidad | Mostrar información de auto| Informacion de auto | ✔️ |
 |Auto registrado <br> El auto no tenga disponibilidad | No mostrar información de auto| Auto no disponible | ❌ |
 
-<br>
+|Comentarios|
+|---|
+|<br><br><br><br>|
+||
 
 ### **4.1.16 Navegacion sin registro de usuario**
+|Descripción|
+|---|
+|<br><br><br><br>|
+||
+
 | Entrada | Salida Esperada | Salida Recibida | Aprobado |
 |---|---|---|:---:|
 |Usuario registrado <br> Selección a botón de "Comprar" |Mostrar vista de Comprar|Vista de Compra| ✔️ |
@@ -521,9 +780,17 @@ El usuario no se registro | Mostrar vista General| Vista General| ✔️ |
 |Usuario no registrado <br> Selección a botón de "Prueba de Manejo" |Autorización de vista fallida <br>con mensaje de error|Usuario no autorizado<br>*Mensaje de Error*: Registrate o inicia sesión para realizar esta acción | ❌ |
 |Usuario no registrado <br> Selección a botón de "Contactar Agencia" |Autorización de vista fallida <br>con mensaje de error|Usuario no autorizado<br>*Mensaje de Error*: Registrate o inicia sesión para realizar esta acción | ❌ |
 
-<br>
+|Comentarios|
+|---|
+|<br><br><br><br>|
+||
 
 ### **4.1.17 Muestra de widgets o campos requeridos seleccionados para comprar vehiculo**
+|Descripción|
+|---|
+|<br><br><br><br>|
+||
+
 | Entrada | Salida Esperada | Salida Recibida | Aprobado |
 |---|---|---|:---:|
 |Número de documentos tiene un campo seleccionado <br> Nombre de documentos completo <br> Nombre válido de documento<br> Selección de datos de usuario | Creación de página con número de documentos requerido <br> Mensaje para usuario con datos que se extraeran de su cuenta| Página Subida | ✔️ |
@@ -531,22 +798,147 @@ El usuario no se registro | Mostrar vista General| Vista General| ✔️ |
 |Número de documentos tiene un campo seleccionado <br> Nombre de documentos incompleto  | Error al subir página| Campos incompletos <br> *Mensaje de Error:* Completar datos de documentos |❌ |
 |Número de documentos tiene un campo seleccionado <br> Nombre de documentos completo <br> Nombre inválido de documento |Error al subir página| Nombre inválido <br> *Mensaje de Error:* Nombre de documento inválido |❌ |
 
-<br>
+|Comentarios|
+|---|
+|<br><br><br><br>|
+||
 
 ### **4.1.18 Busqueda con lenguaje natural**
+|Descripción|
+|---|
+|<br><br><br><br>|
+||
+
 | Entrada | Salida Esperada | Salida Recibida | Aprobado |
 |---|---|---|:---:|
 | Una cadena de texto con características de un vehículo| El buscador reconoce la información brindada y devuelve vehículos correspondientes al texto ingresado | Vehículos que cumplan con los campos del string ingresado | ✔️ |
 | Una cadena de texto que no tiene que ver con vehículos | El buscador no reconoce la información brindada y devuelve un error | *Mensaje de Error*: La información ingresada no tiene que ver con un automovil | ❌ |
 | Una cadena de texto que tiene un vehículo que no existe o no está disponible | El buscador reconoce la información brindada y devuelve un mensaje de búsqueda no encontrada | *Mensaje*: El automovil que estás tratando de buscar no está disponible | ✔️ |
+
+|Comentarios|
+|---|
+|<br><br><br><br>|
+||
 ---
 
 ### **4.2 Pruebas de Caja Blanca** 
-En estas pruebas su objetivo es revisar la funcionalidad de la plataforma en caso de que las pruebas de caja negra no hayan sido exitosas. Estas pruebas son más profundas puesto que estas se enfocan en la esctructura interna de la aplicación.
+En estas pruebas su objetivo es revisar la funcionalidad de la plataforma en caso de que las pruebas de caja negra no hayan sido exitosas. Estas pruebas son más profundas puesto que estas se enfocan en la esctructura interna de la aplicación. 
+<br>
+#### **4.2.1 Prueba que necesitarán Caja Blanca**
+No se realizarán estas pruebas en todas las pruebas de caja negra que se estipularon anteriormente, debido a la complejidad de algunas de estas pruebas. 
+<br>
+Las pruebas seleccionadas son las siguientes:
+<ul>
+  <li>
+    4.1.2 Inicio de sesión y registro
+  </li>
+  <li>
+  4.1.4 Aceptación de datos embedidos
+  </li>
+  <li>
+    4.1.5 Mostrar datos de disponibilidad de vehiculo a usuario
+  </li>
+  <li>
+    4.1.7 Modificacion de comisiones *
+  </li>
+  <li>
+    4.1.8 Busqueda guiada
+  </li>
+  <li>
+    4.1.9 Muestra opciones de pago
+  </li>
+  <li>   
+    4.1.10 Muestra de diferentes paginas o widgets segun el rol
+  </li>
+  <li>
+    4.1.11 Aplicacion de ofertas al precio del automovil
+  </li>
+  <li>
+    4.1.12 Encriptacion de datos de usuario
+  </li>
+  <li>
+    4.1.15 Muestra de datos del automovil
+  </li>
+  <li>
+    4.1.16 Navegacion sin registro de usuario
+  </li>
+  <li>
+    4.1.17 Muestra de widgets o campos requeridos seleccionados para comprar vehiculo
+  </li>
+  <li>
+    4.1.18 Busqueda con lenguaje natural
+  </li>
+</ul>
 
+<br>
 
+#### **4.2.2 Pruebas de Cobertura**
+Estas pruebas tratarán de cubrir todo el código ejecutando cada sentencia por lo menos una vez y revisando que partes del código son utilizadas y de esta manera percibir de forma más clara las áreas de oportunidad.
+Se tienen diferentes niveles de cobertura de ejecución de código como lo son:
+<ul>
+  <li>
+    Sentencia: Requiere que se ejecute cada sentencia al menos una vez
+  </li>
+  <br>
+  <li>
+    Descisión: Establece que es necesario escribir un número suficiente de casos de prueba como para que cada condición evalúe por lo menos un resultado verdadero y uno falso
+  </li>
+  <br>
+  <li>
+    Condición: Obliga a que cada condición lógica evalúe todos los resultados posibles, para evitar que se ignore la evaluación de ciertos valores en decisiones que usan múltiples condiciones
+  </li>
+  <br>
+  <li>
+    Función: Las funciones del código fuente que se llaman y ejecutan al menos una vez
+  </li>
+</ul>
+<br>
+Para calcular el porcentaje de cobertura del código, se usa la siguiente ecuación:
+<br><br>
 
+$$
+ Porcentaje \space de \space cobertura \space de \space código \space = \space (Número \space de \space líneas \space de \space código \space ejecutadas \space por \space un \space algoritmo \space de \space prueba \space / \space Número \space total \space de \space líneas\space de\space código\space en\space un\space componente\space del\space sistema) * 100
+$$
+
+<br>
+Con esta estimación será posible determinar que cantidad de código ya está cubierta para tener mejor seguridad de que cosas tomar más en cuenta a la hora de revisar el código.
+<br><br>
+
+#### **4.2.3 Pruebas de Camino Básico**
+El propósito de estas pruebas será de recorrer todos los caminos de la aplicación, tomando en cuenta las sentencias y condiciones del programa. Será util para determinar:
+<ur>
+  <li>
+    El numero de caminos a probar
+  </li>
+  <li>
+    La calidad del codigo utilizando la siguiente ecuación para el calculo de complejidad ciclomática en cualquier grafo que represente los caminos de algun programa:
+  </li>
+</ur>
+<br>
+
+$$
+  V \space (G) \space = \space Número \space de \space Aristas \space - \space Número \space de \space Nodos \space + \space 2
+$$
 
 <br>
 
 ## **Conclusiones**
+Las pruebas escritas en este documento desglozan cada procedimiento a realizar para el correcto funcionamiento de la aplicación. Cada una está pensada para mostrar el flujo y funcionalidades de la misma teniendo así datos concizos de qué salida debe de darse dependiendo de la entrada ingresada por el usuario correspondiente dentro de la interfaz de usuario.
+<br>
+Las pruebas dinámicas del documento están distribuidas de tal forma que se tienen secciones de mayor a menor cobertura para así tener pruebas de lo general a lo particular, facilitando el proceso de debugging. La división de pruebas de caja negra y blanca hacen que se tome en cuenta en que casos de ser necesario será requerido revisar el código fuente del producto para realizar cualquier tipo de corrección.
+<br>
+En general las pruebas ayudan a que se tengan medidas de preocaución para posibles errores de la aplicación teniendo así formas de ver que tipo de acciones deben de tomarse según sea el caso que ocurra. El hecho de tener un orden en las mismas también es un beneficio en cuanto al desgloce de prioridades que existe al momento de ir viendo que parte o componente del producto ha tenido algún percance por lo que es indispensable tener estas medidas de riesgos para antes de que la aplicación esté activa.
+<br><br>
+
+### **5.0 Estimacion de tiempos**
+<br>
+
+#### **5.1.0 Desglose de tiempos para pruebas**
+| Actividades | Actividades específicas | Horas de Caja Negra | Horas de Caja Blanca |
+|---|---|---|---|
+| Construcción | Levantamiento de Base de Datos | 7.6 | 15.2 |
+|  | Implementación de Front End | 14 | 28 |
+|  | Desarrollo de la API | 10.4 | 20.8 |
+|  | Implementación de Seguridad | 6.4 | 12.8 |
+|  | Desarrollo de Back End | 10.8 | 21.6 |
+|  | Desarrollo de Back End | 10.8 | 21.6 |
