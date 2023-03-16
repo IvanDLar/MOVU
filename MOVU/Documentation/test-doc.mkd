@@ -206,7 +206,7 @@ A que le harémos las pruebas
 (ej.- todos los requerimientos ( funcionales y funcionales ) le harémos pruebas informales)
 
 ## **Descripción**
-![Flujo de Pruebas De Software]("../img/pruebas-proceso.png")
+![Flujo de Pruebas de Software]('../../img/pruebas-proceso.png)
 
 ## **Tabla de roles**
 
@@ -222,6 +222,8 @@ A que le harémos las pruebas
 | CEO | - Recorrido | - Es sumamente importante que el CEO esté presente a la hora de realizar la prueba más real y completa, para que el mismo pueda evaluar el rendimiento del sistema y observar de primera mano todos los comportamientos del sistema.  |
 | User | - Manual de Usuario  | --- IMPORTANTE REVISAR --- |
 <br>
+
+![Flujo de Pruebas de Software]('../../img/jerarquia.drawio.png)
 
 ## **Plan de comunicación**
 
