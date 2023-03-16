@@ -79,9 +79,40 @@ Los pasos que hay que seguir al utilizar GitKraken de acuerdo con esta forma de 
         Dar click en la opción de clonar repositorio
     </li>
 
-![]('../../img/clone-repo.png')
+![clone repo]('../../img/clone-repo.png')
     <li>
         Una vez clonado, aparecerá una ventana similar a la siguiente:
     </li>
 
+![main view]('../../img/main-page-gitkraken.png')
+    <li>
+        Una vez en la vista principal del GitKraken es posible realizar distintas tareas, sin embargo nos centraremos en la creación de branches con el formato correcto:
+    </li>
+
+![create branch]('../../img/create-branch.png')
+    <li>
+        Dar click en el botón de branch para crear una nueva branch (hacer esto cuando el main este actualizado para tener todos los cambios), el nombre de la branch depende del tipo de desarrollo, implementación o documento a trabajar según sea el caso (recordar crear una issue para llevar el registro del número de cambios en el repositorio):
+    </li>
+
+![branch name]('../../img/branch-name.png')
+    <ul>
+        <li>
+            Una vez creada la branch con su respectivo nombre ya es posible realizar las modificaciones pertinentes según sea el caso. Si es que la branch en la que se encuentre el desarrollador queda debajo de nuevas modificaciones a la rama main por otras ramas, se verá en GitKraken que el main está más arriba que la branch actual, en estos casos para reflejar los nuevos cambios en nuestra branch se debe de hacer click derecho sobre la rama main desde la rama branch y dar click en rebase para hacer un pull de los nuevos cambios en nuestra branch que están en main para tenerla al mismo nivel que main. 
+        </li>
+    </ul>
+    <li>
+        Una vez realizados los cambios pertinentes en la branch correspondiente, para hacer merge se debe de generar un pull request el cual desplegará la siguiente información que es necesario completar (recordar agregar a los desarrolladores encargados de revisar los cambios que se harán al repositorio):
+    </li>
+
+![pull request]('../../img/pull-request.png')
+    <li>
+        Una vez realizado el pull request, un mínimo de desarrolladores deben de revisar los cambios realizados y aceptar la solicitud para poder hacer un squash and merge (es importante seleccionar está opción para evitar conflictos en el repositorio):
+    </li>
+
+![squash and merge]('../../img/squash-merge.png')
+    <li>
+        Por último se debe de eliminar la branch tanto local como del repositorio.
+    </li>
 </ol>
+
+Estos son los principales pasos para trabajar con esta herramienta y tener así una mejor optimización del trabajo.
