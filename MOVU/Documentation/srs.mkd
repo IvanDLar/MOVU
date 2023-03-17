@@ -199,7 +199,7 @@ Utilizamos servicios de AWS, como **Route 53** para generar un DNS con el nombre
 
 Con todas estas herramientas que se nos proporcionan podremos logran nuestro objetivo de hacer una página segura y fácil de usar para nuestros usuarios.
 
-![Arquitectura Sugerida](./Arquitectura/Arquitectura%20De%20MOVU%20v2.0.png)
+![Arquitectura Sugerida](./img/propuesta-arquitectura.png)
 <br>
 
 ## **5. Propuesta de Front End**
