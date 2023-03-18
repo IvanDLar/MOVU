@@ -1,0 +1,210 @@
+# Especificación de Requerimientos de Software
+
+## Historial de Documento
+
+|Fecha|Version|Descripción|Autor|
+| ---|   ---     | --- | --- |
+|<08/03/23> |<1.0>| Descripción del Proyecto |Andrea Yela González|
+|<08/03/2323> |<1.0>| Scope del Proyecto |Emilio Sibaja Villarreal|
+|<08/03/2323>  |<1.0>| Descripcion de Requerimientos |Juan Muniain Otero|
+|<08/03/23> |<1.0>| Sección de Pruebas y plantilla de caja negra |Ivan Diaz Lara
+
+
+<br>
+
+## Tabla de Contenidos
+
+- [Introducción](#id1)
+    - [Proposito](#id1_1)
+    - [Descripción del Proyecto](#id1_2)
+    - [Scope](#id1_3)
+    - [Abreviaciones y acrónimos](#id1_4)
+- [Historias de Usuario](#id2)
+- [Requerimientos](#id3)
+    - [Requerimientos Funcionales](#id3_1)
+    - [Requerimientos No Funcionales](#id3_2)
+- [Pruebas de Software](#id4)
+    - [Pruebas de Caja Negra](#id4_1)
+        - [Propuestas](#id4_1_1)
+        - [Plantilla](#id4_1_2)
+    - [Pruebas de Caja Blanca](#id4_2)
+        - [Propuestas](#id4_2_1)
+        - [Plantilla](#id4_2_2)
+        
+    
+
+<br>
+
+<h1 style="text-align: center;">Especificación de Requerimientos de Software</h1>
+
+## **Introducción** <a name="id1"></a>
+<br>
+
+### **1.1 Proposito** <a name="id1_1"></a>
+
+Con este documento se quiere dar a conocer las diferentes pruebas de software que se realizaran durante la creación del proyecto. Además de dar a conocer las ideas que se tienen c
+
+
+<!-- The purpose of the document is to collect and analyze all assorted ideas that have come up to define the system, its requirements with respect to consumers. Also, we shall predict and sort out how we hope this product will be used in order to gain a better understanding of the project, outline concepts that may be developed later, and document ideas that are being considered, but may be discarded as the product develops.
+
+In short, the purpose of this SRS document is to provide a detailed overview of our software product, its parameters and goals. This document describes the project's target audience and its user interface, hardware and software requirements. It defines how our client, team and audience see the product and its functionality. Nonetheless, it helps any designer and developer to assist in software delivery lifecycle (SDLC) processes. -->
+<br>
+
+### **1.2 Descripción del Proyecto** <a name="id1_2"></a>
+
+Se necesita crear una plataforma donde un usuario pueda comprar un automóvil sin tener que acercarse a una agencia de forma fisica. La plataforma debe permitir que las compañias de automóviles puedan registrarse, y cuando hayan sido aceptadas poder subir sus autos y las agencias correspondientes. Los usuarios al momento de buscar un auto lo podrán personalizar y hasta solicitar una prueba de manejo. Esta plataforma tiene el objetivo de poder cambiar la forma de adquirir un auto por una más eficiente, sin perder la calidad.
+<br></br>
+
+### **1.3 Scope** <a name="id1_3"></a>
+
+<!-- Primarily, the scope pertains to the E-Store product features for making Marvel Electronics and Home Entertainment project live. It focuses on the company, the stakeholders and applications, which allow for online sales, distribution and marketing of electronics. -->
+El objetivo de este proyecto se enfoca en ofrecer una experiencia única y fluida para el usuario brindandoles una plataforma segura donde las concesionarias puedan establecerse y de esta manera los clientes tienen un punto de compra unificado. Para ello, colaboraremos en un equipo de 5 personas donde cada uno tiene responsabilidades asignadas para un tiempe detereminado. Utilizaremos recursos que nos proporciona AWS los cuales principalmente son para alojar el proyecto dentro de la nube
+
+
+<!-- This SRS is also aimed at specifying requirements of software to be developed but it can also be applied to assist in the selection of in-house and commercial software products. The standard can be used to create software requirements specifications directly or can be used as a model for defining a organization or project specific standard. It does not identify any specific method, nomenclature or tool for preparing an SRS. -->
+<br></br>
+
+### **1.3 Definiciones, Acronimos y Abreviaciónes**
+|Acronimo o Abreviación|Definicion|
+| ---|   --- |
+|<span style="color:red"> M </span>| Must Have (Debe tener)|
+|<span style="color:yellow"> S </span>| Should Have (Debería tener)|
+|<span style="color:green"> C </span>| Could Have (Podría tener)|
+|<span style="color:blue"> W </span>|Won't Have (No tendrá)|
+
+<br>
+
+<!-- ### 1.4 References
+
+The references are:
+
+- E-Store Structural Model
+- E-Store Behavioral Model
+- E-Store NFR Model
+- Vision Draft 5 -->
+
+<!-- ### 1.5 Overview
+
+The remaining sections of this document provide a general description, including characteristics of the users of this project, the product's hardware, and the functional and data requirements of the product. General description of the project is discussed in section 2 of this document. Section 3 gives the functional requirements, data requirements and constraints and assumptions made while designing the E-Store. It also gives the user viewpoint of product. Section 3 also gives the specific requirements of the product. Section 3 also discusses the external interface requirements and gives detailed description of functional requirements. Section 4 is for supporting information. -->
+
+---
+
+## 2. **Historias de Usuario**  <a name="id2"></a>
+<br>
+
+| ID | Historia de Usuario| Criterio de Aceptación | Clasificacion |
+| :---: | --- | --- | :---: |
+| 1 | (Super Admin.) Pantalla de validacion de agencias para poder tener control sobre quienes se registran y venden autos en nuestra pagina. | Requiere de:<ur><li>Al menos una lista de las agencias que han aplicado para ser aceptados dentro de la aplicación.</li><li>El (Super Admin.) podrá revisar y verificar la info de cada una de las agencias listadas.</li><li>Filtrar, aceptado, negados, en proceso, en revision, pedir documetnación extra, etc.</li></ur>| <span style="color:red"> M </span> |
+| 2 | (Super Admin.) Pantalla de administración de usuarios para dar seguimiento a credencailes, al igual que realizar operaciones como agregar/eliminar. | Requiere de:<ur><li>Un listado y el tipo de todos los usuarios</li><li>En caso de ser necesario bloquear al usuario de la pagina.</li></ur>| <span style="color:red"> M </span> |
+| 3 | (Super Admin.) Capacidad de modificar los productos expuestos por agencia para administrar o actualizar ventas y llevar seguimiento de ofertas. | Requieren de:<ur><li>Modificar los vehículos que estén expuestos por alguna agencia.</li><li>Eliminar los vehiculos.</li></ur>| <span style="color:red"> M </span> |
+| 4 | (Super Admin.) Pantalla de analisis de datos de los productos por agencia para que se vea una serie de estadisticas de cada agencia. | El super usuario tendrá una pantalla que brindará datos a forma de resumen de los productos por cada agencia, tales como:<ur><li>Tipos de vehículos.</li><li>Cantidad de los mismos dependiendo de la marca.</li></ur>| <span style="color:blue"> W </span> |
+| 5 | (Super Admin.)  Almacenar temporalmente las sesiones de los usarios que ingresen a la pagina. | Requiere de:<ur><li> Implementación de Cookies.</li></ur> | <span style="color:yellow"> S </span> |
+| 6 | (Super Admin.) Administrar vehiculos dentro de la pagina para control de contingencias. | Requiere de:<ur><li> Listado de vehiculos con datos como:</li><li> ID del listado.</li><li> Agencia.</li><li> Uploader.</li><li> Botones para eliminar.</li></ur> | <span style="color:yellow"> S </span> |
+| 7 | (Super Admin.) Revisar datos de los gerentes de grupo. | Requiere de:<ur><li> Campos de texto con los datos del gerente seleccionado.</li><li> Drop down de agencias que administra.</li><li> Documentos de agencia segun la agencia seleccionada.</li></ur> | <span style="color:yellow"> S </span> |
+| 8 | (Gerente de Grupo) Pantalla para administrar a sus agencias para llevar seguimiento de automoviles, al igual que metricas de cada agencia. | Requiere de:<ur><li> Widgets para visualizar datos como lista/numero de clientes. </li><li> Gerente de agencia asignado.</li><li> Numero de autos registrados/dispobibles en la agencia.</li></ur> Numero de agencias.</li></ur> | <span style="color:red"> M </span> |
+| 9 | (Gerente de Grupo) Pantalla para administrar a sus automoviles por cada agencia, con la finaldiad de visualizar metricas de los autos, y administrar datos como stock, precio, y promociones. | Requiere de:<ur><li> Widgets para visualizar los automoviles listados, con:</li><li> Cantidad disponible. </li><li> Estatus (out of stock, in stock, preorder).</li><li> Promociones.</li></ur>| <span style="color:red"> M </span> |
+| 10 | (Gerente de Grupo) Pantalla de documentacion para agregar a una agencia con la finalidad de agilizar el proceso de listado de agencias. | Requiere de:<ur><li> Un formulario con celdas para el ingreso de datos de la agencia.</li><li> Entrada o entradas para documentos (acta constitutiva, cédula de identificación fiscal, comprobante de domicilio, etc.).</li></ur>| <span style="color:yellow"> S </span> |
+| 11 | (Gerente de Grupo) Pantalla de adicion de los carros disponibles con sus especificaciones para agilizar el proceso de listado de productos. | Requiere de:<ur><li>Un formulario para cada componente a agregar del auto.</li><li> Entradas de texto para los datos del automovil.</li><li> Imagenes del automovil.</li><li> URLs al sitio oficial del fabricante y/o ficha tecnica del automovil.</li></ur>| <span style="color:red"> M </span> |
+| 12 | (Gerente de Agencia) Pantalla de validacion de documentacion para prueba de manejo. | Requiere de:<ur><li> Una pantalla de validación de documentos para prueba de manejo. </li></ur>| <span style="color:green"> C </span> |
+| 13 | (Gerente de Agencia) Pantalla de lista de vendedores para administrarlos con sus respectivas metricas. | Requiere de:<ur><li> Widgets por cada vendedor que contenga cantidad de ventas.</li><li> Ubicacion del vendedor.</li><li> Opcion de eliminar/agregar vendedores.</li></ur>| <span style="color:yellow"> S </span> |
+| 14 | (Gerente de Agencia) Pantalla con todas las ventas y sus estados para tener un registro de cada compra, comprador y vendedor. | Requiere de:<ur><li> Widgets por cada venta que contenga datos como:</li><li> Estatus de la venta.</li><li> Auto vendido.</li><li> Datos del vendedor.</li><li> Fecha de venta.</li><li> Ubicacion</li></ur> | <span style="color:red"> M </span> |
+| 15 | (Gerente de Agencia) Asignar a agente a prueba de manejo tras seleccionar la prueba en la pagina de solicitudes de pruebas para la agencia. | Requiere de:<ur><li> Lista de agentes disponibles para la prueba de manejo.</li></ur> | <span style="color:yellow"> S </span> |
+| 16 | (Gerente de Agencia) Poder definir que informacion de usuario requerir al momento de realizar la compra de un automovil. | Requiere de:<ur><li> Cada agencia debe indicar por medio del gerente que información del usuario requieren para realizar una compra de alguno de sus productos.</li></ur> | <span style="color:yellow"> S </span> |
+| 17 | (Vendedor) Pantalla de estado de compra del usuario para darles apoyo si es necesario. | Requiere de:<ur><li> Un listado del historial de como va avanzando el proceso de compra del vehículo.</li></ur>| <span style="color:green"> C </span> |
+| 18 | (Usuario) Widget de busqueda para consultar los autos disponites. | Requiere de:<ur><li> Un buscador ya sea guiado o con lenguaje natural donde el usuario pueda ver ciertos carros que cumpla sus necesidades de compra.</li></ur> | <span style="color:red"> M </span> |
+| 19 | (Usuario) Poder seleccionar cualquier ubicacion segun las direcciones registradas en mi cuenta, o mi ubicacion actual. | Requiere de:<ur><li> Widget con drop down para seleccionar de las ubicaciones registradas</li><li> Campo de entrada para establecer codigo postal.</li></ur> | <span style="color:yellow"> S </span> |
+| 20 | (Usuario) Pantalla de registro para poder acceder a una cuenta en donde el usuario pueda acceder a todos los servicios de la página. | Requiere de:<ur><li>Pantalla que pide la información del usuario para registrarse en la aplicación, la cual debe contener:</li><li> Campos de entrada de texto para nombre de usuario, contraseña, ubicacion, telefono, edad.</li><li> Mensajes de error en caso de que el usuario o la contraseña sea incorrecta.</li><li> Opcion de log-in en caso de que ya exista el usuario.</li></ur> | <span style="color:red"> M </span> |
+| 21 | (Usuario) Pantalla de compra para empezar el proceso de adquisicion del automovil. | Requiere de:<ur><li> Carrete donde se muestren multiples vistas del automovil.</li><li> Formulario de personalizacion del auto.</li><li> Boton para realizar la compra.</li><li> Sección de Información (del vehiculo).</li></ur> | <span style="color:red"> M </span> |
+| 22 | (Usuario) Pantalla para subir documentacion necesaria para la compra del auto. | Requiere de:<ur><li> Campos de entrada de texto.</li><li> Campos de entrada de archivos PDF.</li></ur> | <span style="color:red"> M </span> |
+| 23 | (Usuario) Pantalla de inicio de sesion para los usuarios que ya tienen una cuenta. | Requiere de:<ur><li> Campos de entrada de texto para el nombre y la contraseña. </li><li> Mensajes de error en caso de que el usuario o la contraseña sea incorrecta. </li><li> Opcion de registro en caso de que no exista el usuario.</li></ur> | <span style="color:red"> M </span> |
+| 24 | (Usuario) Pantalla de carrito de compra. | Requiere:<ur><li> Contener el la información.</li><li> La imagen del. </li><li> Automovil seleccionado por el usuario.</li></ur> | <span style="color:yellow"> S </span> |
+| 25 | (Usuario) Pantalla de wishlist para que los usuarios tengan una colección de sus automoviles deseados y en algún futuro puedan proceder a comprar | Requiere de:<ur><li> Una lista de widgets para cada auto agregado a la wishlist.</li><li> Datos como su disponibilidad y precio.</li></ur> | <span style="color:blue"> W </span> |
+| 26 | (Usuario) Poder tomar una prueba de manejo del automovil que me interesa para poder llegar a una decison final de compra. | Requiere de:<ur><li> Sistema de solicitud donde el usuario ingrese:</li><li> Fecha de prueba de manejo, segun las fechas disponibles en la agencia.</li><li> Hora de la prueba en la fecha seleccionada, segun las horas disponibles.</li><li> Seleccion de ubicacion de la prueba de manejo.</li><li> Pago de cuota para la prueba de manejo.</li><li> Obtencion de datos de usuario para generar y enviar confirmacion de cita.</li></ur> | <span style="color:red"> M </span> |
+| 27 | (Usuario) Widget de chat con soporte | Requiere de:<ur><li> La existencia un pequeño chat bot que fungirá como asistente para preguntas frecuentes que tengan los clientes sobre la aplicación.</li></ur> | <span style="color:green"> C </span> |
+| 28 | (Usuario) Pantalla de chat con vendedor para brindarle una mejor experiencia al usuario. | Requiere de:<ur><li> Que al momento de tener interés por un vehículo habrá una pantalla con chat para hablar con el vendedor si es que se tienen preguntas respecto al producto.</li></ur> | <span style="color:green"> C </span> |
+| 29 | (Usuario) Pantalla de la Agencia (donde se ve el catalogo y destacados de esa agencia) | Requiere de:<ur><li> Homepage para exhibir los coches con los que la agencia cuenta.</li><li> Sección de autos destacados.</li></ur> | <span style="color:yellow"> S </span> |
+| 30 | (Usuario) Pantalla del coche individual (pagina de producto) para que el usuario pueda revisar de manera detallada las especificaciones del automovil. | Requiere de:<ur><li> Características mecánicas.</li><li> Modelo digital.</li><li> Opciones de personalización.</li><li> Ficha técnica.</li><li> Precio.</li><li> Ubicación del vehículo (disponibilidad).</li><li> Formas de pago.</li></ur> | <span style="color:red"> M </span> |
+| 31 | (Usuario) Poder modificar la información personal que he ingresado para actualizar mi cuenta. | Requiere de:<ur><li> Edicion de datos ya ingresados.</li><li> Adicion/elimiancion de direcciones.</li><li> Adicion/eliminacion de metodos de pago.</li><li> Adicion/eliminacion de documentos y comprobantes.</li><li> Eliminacion de cuenta.</li></ur> | <span style="color:red"> M </span> |
+| 32 | (Usuario) Dejar una reseña y calificar el automovil comprado para poder ayudar a futuros compradores que tan bueno/malo es el automovil. | Requiere de:<ur><li> Sistema para calcular calificacion total.</li><li> Almacenamiento de la calificacion dada por el usuario.</li></ur> | <span style="color:blue"> W </span> |
+| 33 | (Usuario) Quiero buscar con lenguaje natural mi automovil para poder buscar de manera mas facil y sencilla el coche que quiero. |  | <span style="color:green"> C </span> |
+| 34 | TODOS - Poder usar la pagina web en cualquier dispositivo (mobil, desktop). | Requiere de:<ur><li> Una libreria que nos permita crear de manera sencilla elementos para hacer la pagina reactiva.</li><li> Diseño de multiples vistas, para algunos de los tamaños de pantallas más comunes.</li></ur> | <span style="color:red"> M </span> |
+| 35 | TODOS - Una aplicación donde se manejen mis datos de manera segura para sentirme seguro con la app almacenando mi información. | Requiere de:<ur><li> Encriptacion del almacenamiento de informacion sensible.</li><li> Cifrado end to end.</li></ur> | <span style="color:yellow"> S </span> |
+<br>
+---
+
+## 3.**Requerimientos** <a name="id3"></a>
+
+Los requerimientos ayudarán a saber como debe de funcionar la plataforma para crear una experienia de usuario ideal.
+
+### **3.1 Requerimientos Funcionales** <a name="id3_1"></a>
+
+<br>
+
+| |Requerimiento | Detalles |
+| :---: | --- | --- |
+| 1 | El sistema de válidacion de compañias debe desplegar solicitudes de compañias para permitir al Super Administrador aceptar o rechazar las solicitudes ordenandolas por la fech de solicitud. | Se requiere de un listado de solicitudes ordenado en orden de fecha de solicitud, y un despliegue de los datos de solicitud tras hacer cliock en el elemento de la lista. Se requiere de un boton de rechazo de solicitud, y un boton de aceptacion de solicitud. |
+| 2 | El sistema de registro de usuario debe contener campos de entrada para permitir el acceso a todas las funcionalidades del sitio. | Requiere de campos de entrada de texto para datos personales como nombre, apellido, correo y contraseña, campo de entrada para fecha de nacimiento, y campo de entrada para imagenes de perfil. |
+| 3 | El sistema de registro de vehiculos debe contener campos de entrada para ingresar datos, componentes y detalles configurables, e imagenes sobre el vehiculo. | Se requiere de campos de entrada de texto para ingresar datos del vehiculo y descripcion, campos de entrada para agregar componentes configurables a sus listas correspondientes, y campos de entrada de imagenes del vehiculo. |
+| 4 | Sistema de registro y eliminacion de gerente de agencia por parte del gerente de grupo para su asignacion a agencia|Requiere de campos de entrada de texto para datos del gerente|
+| 5 | Sistema de registro y eliminacion de vendedores por parte del gerente de agencia para su asignacion a la agencia|Requiere de campos de entrada de texto para datos del vendedor|
+| 6 | Mostrar las agencias en donde el vehículo se encuentra disponible|Los vehículos se ofreceran independientemente de su ubicación, considerando su disponibilidad y distancia al cliente.|
+|7| Sistema de registro de agencias para su validacion y listado en el sitio.|Requiere de campos de entrada de texto para datos de la agencia y entradas para documentos en formato pdf.|
+|8|Sistema de asignacion de comisiones por listado de agencias y vehiculos|Requiere de un sisema para ajustar el valor de la comision por cada agencia segun la cantidad de agencias y vehiculso listados.|
+|9|Sistema de inicio de sesión de usuario ya existente para que los usuarios puedan acceder al sitio sin restricciones|Requiere de campos de entrada de texto para nombre de usuario o correo y contraseña|
+|10|Sistema de solicitud de prueba de manejo donde el usuario pueda mandar sus documentos a la agencia y ser aprobada la solicitud o rechazada.|Mediante la pagina del automovil deseado, se requiere de una pagina con campos de entrada de documentos, y pagina de seleccion de ubicacion, fecha y hora de la prueba, en este orden. El usuario debe haber iniciado sesion.|
+|11|Página principal con los autos más populares del mes para incrementar la presencia de las agencias.|La página de inicio contará con vistas de vehículos populares listados por las agencias automotrices para su promocion.|
+|12|Sistema de busqueda con lenguaje natural para visualizar el auto con las caracteristicas preferentes del usuario|Requiere de campo de entrada de texto y reconocimiento de patrones de entrada para mostrar coincidencias con productos ofrecidos segun sus caracteristicas almacenadas|
+|13|Sistema de busqueda guiada para que los usuarios puedan entender como funciona el buscador y que palabras pueden usar.||
+|14|Sistema de reconocimento y extraccion de informacion de documentos||
+|15|Sistema de pago con opciones de pago directo, embedido, y planes de financiamiento para ofrecer mas opciones de pago al usuario.|Requiere de campso de entrada de texto para datos personales y bancarios, al igual que opciones de pago embedidas.|
+|16|Sistema que permita visualizar las paginas pertinentes de cada rol |Requiere de una redireccion a las views adecuadas al usuario que inicio sesión|
+|17|Chatbot para brindar atencion al usuario|Requiere de un sistema guiado y finito para resolucion de dudas del usuario|
+|18|Vistas con datos de soporte tecnico para brindar atencion al usuario|Requiere de datos de soporte tecnico como correos y numeros telefonicos.|
+|19|Capacidad para aplicar ofertas sobre productos ofrecidos por parte del gerente de grupo|Requiere de campos de entrada para porcentaje de descuento a aplicar sobre el producto|
+|20|Encriptacion de la información sensible de los usarios|Utilizando algoritmos sobre los metodos de la API y certificaciones para el sitio web |
+|21|Opciones de adquisicion del vehiculo para brindar flexibilidad en su forma de entrega|Requiere de seleccion de opciones de entrega mediante dropdown|
+|22|Seleccion de imagenes de los vehiculos ofrecidos para su visualziacion desde distintos angulos, y con diferentes colores|Requiere de campos seleccionables con imagenes subidas por las agencias|
+|23|Seleccion de componentes de vehiculos para su modificacion | Requiere de campos seleccionables para cada parte modificable segun el listado de la agencia|
+<br>
+
+### 3.2 Requerimientos No Funcionales <a name="id3_2"></a>
+
+<br>
+
+| |Requerimiento    | Detalles |
+| :---:|   ---     | --- |
+|1|Sistema de reconocimento de datos de documentos PDF|Requiere de extraccion y almacenamiento de datos del documento en forma de texto y numeros|
+|2|Pagina que contenga terminos y condiciones del sitio|Requiere de texto esclareciendo cuestiones legales y terminos de uso del sitio|
+|3|Muestra de costo total real|Requiere de calculo del precio del producto incluyendo impuestos aplicables o descuentos|
+|4|Diseño estético del sitio|Requiere de consitencia en paleta de colores y distribucion de widgets que faciliten la experiencia de usuario|
+|5|Fiabilidad del sitio||
+|6|Sistema para mostrar productos similares al seleccionado||
+---
+
+## 4. **Pruebas de Software** <a name="id4"></a>
+<br>
+
+### **4.1 Pruebas de Caja Negra** <a name="id4"></a>
+
+
+#### **4.1.2 Template**
+<br>
+
+**Ejemplo: Login**
+| Entrada  | Salida Esperada  | Salida Recibida  | Aprobado |
+|---|---|---|---|
+| Nombre de Usuario Existente <br> Contraseña Correcta  | Login Exitoso  | El usuario ha ingresado exitosamente  |  ✔️ |
+| Nombre de Usuario Existente <br> Contraseña Incorrecta  | Login Fallido con mensaje de error  | El usuario no puede ingresar <br> *Mensaje de Error*: Credenciales Incorrectas  |  ✔️ |
+| Nombre de Usuario Existente <br> Contraseña Correcta  | El Usuario ha ingresado exitosamente  | El usuario no puede ingresar <br> *Mensaje de Error*: Credenciales Incorrectas  |  ❌ |
+
+#### **4.1.3 Template**
+<br>
+
+## **5. Información Adicional**  <a name="id1"></a>
+
+Please refer the following document:
+<ol>
+<li></li>
+<li></li>
+<li></li>
+</ol>

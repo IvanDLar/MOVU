@@ -4,17 +4,17 @@
 
 |Fecha|Version|Descripción|Autor|
 | ---|   ---     | --- | --- |
-|<08/03/23> |<1.0>| Descripción del Proyecto |Andrea Yela González|
-|<08/03/2323> |<1.0>| Scope del Proyecto |Emilio Sibaja Villarreal|
-|<08/03/2323>  |<1.0>| Descripcion de Requerimientos |Juan Muniain Otero|
-|<08/03/23> |<1.0>| Sección de Pruebas y plantilla de caja negra |Ivan Diaz Lara
-|<08/03/23> |<2.0>| Requerimientos funcionales y no funcionales |Juan Munaiin Otero y Miguel Angel Bustamante Perez|
-|<08/03/23> |<2.0>| Arquitectura del Software | Emilio Sibaja Villarreal|
-|<09/03/23> |<3.0>| Requerimientos no funcionales |Andrea Yela González y Miguel Angel Bustamante Perez|
-|<09/03/23> |<3.0>| Requerimientos Funcionales |Juan Muniain Otero e Ivan Diaz Lara|
-|<09/03/23> |<4.0>| Arquitectura del Software | Emilio Sibaja Villarreal|
-|<09/03/23> |<4.0>| Propuesta de Front End | Andrea Yela González|
-|<10/03/23> |<4.0>| Propuesta del Back End | Ivan Diaz Lara|
+|<08/03/23> |<0.1>| Descripción del Proyecto |Andrea Yela González|
+|<08/03/2323> |<0.1>| Scope del Proyecto |Emilio Sibaja Villarreal|
+|<08/03/2323>  |<0.1>| Descripcion de Requerimientos |Juan Muniain Otero|
+|<08/03/23> |<0.1>| Sección de Pruebas y plantilla de caja negra |Ivan Diaz Lara
+|<08/03/23> |<0.2>| Requerimientos funcionales y no funcionales |Juan Munaiin Otero y Miguel Angel Bustamante Perez|
+|<08/03/23> |<0.2>| Arquitectura del Software | Emilio Sibaja Villarreal|
+|<09/03/23> |<0.3>| Requerimientos no funcionales |Andrea Yela González y Miguel Angel Bustamante Perez|
+|<09/03/23> |<0.3>| Requerimientos Funcionales |Juan Muniain Otero e Ivan Diaz Lara|
+|<09/03/23> |<0.3>| Arquitectura del Software | Emilio Sibaja Villarreal|
+|<09/03/23> |<1.0>| Propuesta de Front End | Andrea Yela González|
+|<10/03/23> |<1.0>| Propuesta del Back End | Ivan Diaz Lara|
 
 
 ## Tabla de Contenidos

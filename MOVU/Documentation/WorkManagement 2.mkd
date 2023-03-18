@@ -1,0 +1,118 @@
+# Work Management
+
+# Tabla de Contenidos
+1. [**Git Hub**](#git-hub)
+    1. [**Issues**](#issues)
+    1. [**Commits**](#commits)
+    1. [**Pull Requests**](#pull-requests)
+2. [**Project Management**](#project-management)
+    1. [**Organización**](#issues)
+# Git Hub
+Github es una gran herramienta que ayuda a llevar un muy buen order de cualquier proyecto, sin embargo es dificil de visualizar el arbol y las diferentes ramas, por lo que para el correcto y eficaz desarrollo del proyecto proponemos usar la herramienta llamada GitKraken, la cual es una interfaz grafica de Git donde se puede visualizar a la perfección el manejo del arbol y de las diferentes ramas. <br>
+![git-kraken]('../../img/git-kraken.png) 
+
+## Issues:
+Para realizar cualquier tipo de tarea será necesario abrir un issue en gitub, con el objetivo de tener todos los cambios (incluso los pequeños) documentados. <br> <br>
+Estos cambios deberán seguir los siguientes lineamientos:
+
+### **Titulo:** <br>
+Usando los estandares de los "Conventional Commits" los cuales nos ayudarán enormemente a saber de manera rapida y sencilla el enfoque especifico de cada Issue
+<br> https://dev.to/achamorro_dev/conventional-commits-que-es-y-por-que-deberias-empezar-a-utilizarlo-23an <br>
+Consiste en asignra una de las siguientes etiquetas al inicio del titulo del Issue y de los commits dentro del proyecto:
+- **feat**: cuando se añade una nueva funcionalidad.
+- **fix**: cuando se arregla un error.
+- **chore**: tareas rutinarias que no sean específicas de una feature o un error como por ejemplo añadir contenido al fichero .gitignore o instalar una dependencia.
+- **test**: si añadimos o arreglamos tests.
+- **docs**: cuando solo se modifica documentación.
+- **build**: cuando el cambio afecta al compilado del proyecto.
+- **ci**: el cambio afecta a ficheros de configuración y scripts relacionados con la integración continua.
+- **style**: cambios de legibilidad o formateo de código que no afecta a funcionalidad.
+- **refactor**: cambio de código que no corrige errores ni añade funcionalidad, pero mejora el código.
+- **perf**: usado para mejoras de rendimiento.
+- **revert**: si el commit revierte un commit anterior. Debería indicarse el hash del commit que se revierte. <br><br>
+
+De misma manera el titulo llevará una breve descripción de la tarea que está por ser realizada dentro del **Issue** <br> <br>
+Ejemplo:
+                        
+    Feat: Implementar botón para iniciar el proceso de compra del automovil.
+
+### **Descripción:** <br>
+Si el issue es derivado de otro issue se tendrá que usar la notación `related#<-Issue->`, esto para llevar un mejor seguimiento de los desarrollos en github y poder seguir los differentes issues hasta el issue de origen. <br> 
+En caso de ser necesario se deberá añadir una descripción más detallada sobre lo qué se hará, se podrán añadir links pertinentes al desarrollo, un poco de documentación extra, etc...<br> <br>
+
+Ejemplo:
+                        
+    Fix: Arreglar bug donde los coches disponibles no se muestran de manera correcta   
+    Descripción: A la hora de hacer click en una agencia en especifico, los coches que se cargan puede que no estén disponibles, es decir no se está tomando en cuenta si el coche se encuentra en "stock" o no.
+## Ramas
+Las ramas llevaran seguirán el siguiente formato: `issues#<-Issue->`.<br> <br>
+
+Ejemplo:
+                        
+    issues#234
+
+De esta manera se asocia directamente el issue con una branch y no da incapie a revolver diferentes issues en una misma rama.
+## Commits:
+Para los commits locales no se llevará una estandar de desarrollo, sin embargo para los commits finales (previos al PR) se deberá llevar la convensión mencionada en la sección de **Descirpción**. Estos nombres también se pueden modificar previo a realizar el merge en el PR de github web.
+
+## Pull Requests
+Para llevar un buen control de que es lo que estará entrando a la rama principal daremos uso de los Pull Requests, donde se deberan seguir las siguientes pautas para poder realizar un squash and merge a la rama principal:
+1. Cómo minimo 2 desarrolladores tendrán que haber revisado los cambios y aceptar el PR.
+2. Ya sea Lead Developer o el Task Lead tendrá que haber revisado los cambios y aceptar el PR. <br>
+
+Si no se cumplen ambos requisitos, el PR `no podrá ser mergeado` a la rama principal.
+
+# Project Management
+Para llevar el manejo de versiones en el proyecto además de utilizar GitHub se hará uso de una herramienta extra conocida como GitKraken que facilita el manejo de commits y branches de una forma más visual y amigable con el usuario
+
+## Organización
+Los pasos que hay que seguir al utilizar GitKraken de acuerdo con esta forma de trabajo son los siguientes:
+
+<ol>
+    <li>
+        Descargar GitKraken desde su página oficial (es necesaria una cuenta de GitHub de estudiante para no pagar por esta herramienta)
+    </li>
+    <li>
+        Iniciar sesión con la cuenta de GitHub destinada al proyecto.
+    </li>
+    <li>
+        Dar click en la opción de clonar repositorio
+    </li>
+
+![clone repo]('../../img/clone-repo.png')
+    <li>
+        Una vez clonado, aparecerá una ventana similar a la siguiente:
+    </li>
+
+![main view]('../../img/main-page-gitkraken.png')
+    <li>
+        Una vez en la vista principal del GitKraken es posible realizar distintas tareas, sin embargo nos centraremos en la creación de branches con el formato correcto:
+    </li>
+
+![create branch]('../../img/create-branch.png')
+    <li>
+        Dar click en el botón de branch para crear una nueva branch (hacer esto cuando el main este actualizado para tener todos los cambios), el nombre de la branch depende del tipo de desarrollo, implementación o documento a trabajar según sea el caso (recordar crear una issue para llevar el registro del número de cambios en el repositorio):
+    </li>
+
+![branch name]('../../img/branch-name.png')
+    <ul>
+        <li>
+            Una vez creada la branch con su respectivo nombre ya es posible realizar las modificaciones pertinentes según sea el caso. Si es que la branch en la que se encuentre el desarrollador queda debajo de nuevas modificaciones a la rama main por otras ramas, se verá en GitKraken que el main está más arriba que la branch actual, en estos casos para reflejar los nuevos cambios en nuestra branch se debe de hacer click derecho sobre la rama main desde la rama branch y dar click en rebase para hacer un pull de los nuevos cambios en nuestra branch que están en main para tenerla al mismo nivel que main. 
+        </li>
+    </ul>
+    <li>
+        Una vez realizados los cambios pertinentes en la branch correspondiente, para hacer merge se debe de generar un pull request el cual desplegará la siguiente información que es necesario completar (recordar agregar a los desarrolladores encargados de revisar los cambios que se harán al repositorio):
+    </li>
+
+![pull request]('../../img/pull-request.png')
+    <li>
+        Una vez realizado el pull request, un mínimo de desarrolladores deben de revisar los cambios realizados y aceptar la solicitud para poder hacer un squash and merge (es importante seleccionar está opción para evitar conflictos en el repositorio):
+    </li>
+
+![squash and merge]('../../img/squash-merge.png')
+    <li>
+        Por último se debe de eliminar la branch tanto local como del repositorio.
+    </li>
+</ol>
+
+Estos son los principales pasos para trabajar con esta herramienta y tener así una mejor optimización del trabajo.
