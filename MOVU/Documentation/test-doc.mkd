@@ -4,16 +4,16 @@
 
 |Fecha|Version|Descripción|Autor|
 | ---|   ---     | --- | :--- |
-|<13/03/23> |<1.0>| Pruebas de Caja Negra y descripcion de contenidos. |Andrea Yela González <br>Juan Muniain Otero <br>Miguel Angel Bustamante Perez|
-|<13/03/23> |<1.0>| Dependencias |Emilio Sibaja Villarreal|
-|<13/03/23> |<1.0>| Alcance y estrategias |Ivan Diaz Lara|
-|<14/03/23> |<2.1>| Pruebas de Caja Negra y descripcion de contenidos. |Andrea Yela González <br>Juan Muniain Otero <br>Miguel Angel Bustamante Perez|
-|<14/03/23> |<2.1>| Proceso de Manejo de Pruebas |Ivan Diaz Lara|
-|<14/03/23> |<2.1>| Dependencias |Emilio Sibaja Villarreal|
-|<14/03/23> |<2.2>| Pruebas de Caja Negra y descripcion de contenidos. |Andrea Yela González <br>Juan Muniain Otero <br>Miguel Angel Bustamante Perez|
-|<14/03/23> |<2.3>| Pruebas de Caja Negra y descripcion de contenidos. |Andrea Yela González <br>Miguel Angel Bustamante Perez|
-|<15/03/23> |<3.0>| Prueba de Caja Blanca y su conexión con Caja Negra |Andrea Yela González <br>Miguel Angel Bustamante Perez<br>Emilio Sibaja Villarreal<br>Juan Muniain Otero|
-|<15/03/23> |<3.0>| Cronograma | Juan Muniain Otero|
+|<13/03/23> |<0.1>| Pruebas de Caja Negra y descripcion de contenidos. |Andrea Yela González <br>Juan Muniain Otero <br>Miguel Angel Bustamante Perez|
+|<13/03/23> |<0.1>| Dependencias |Emilio Sibaja Villarreal|
+|<13/03/23> |<0.1>| Alcance y estrategias |Ivan Diaz Lara|
+|<14/03/23> |<0.2>| Pruebas de Caja Negra y descripcion de contenidos. |Andrea Yela González <br>Juan Muniain Otero <br>Miguel Angel Bustamante Perez|
+|<14/03/23> |<0.2>| Proceso de Manejo de Pruebas |Ivan Diaz Lara|
+|<14/03/23> |<0.2>| Dependencias |Emilio Sibaja Villarreal|
+|<14/03/23> |<0.2>| Pruebas de Caja Negra y descripcion de contenidos. |Andrea Yela González <br>Juan Muniain Otero <br>Miguel Angel Bustamante Perez|
+|<14/03/23> |<0.2>| Pruebas de Caja Negra y descripcion de contenidos. |Andrea Yela González <br>Miguel Angel Bustamante Perez|
+|<15/03/23> |<1.0>| Prueba de Caja Blanca y su conexión con Caja Negra |Andrea Yela González <br>Miguel Angel Bustamante Perez<br>Emilio Sibaja Villarreal<br>Juan Muniain Otero|
+|<15/03/23> |<1.0>| Cronograma | Juan Muniain Otero|
 <br><br>
 
 # **1. Tabla de Contenidos**
